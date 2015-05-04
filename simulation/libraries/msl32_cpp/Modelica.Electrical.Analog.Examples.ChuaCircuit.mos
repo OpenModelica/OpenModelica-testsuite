@@ -8,7 +8,7 @@
 
 runScript("../common/ModelTestingDefaults.mos"); getErrorString();
 
-modelTestingType := OpenModelicaModelTesting.Kind.VerifiedSimulation;
+modelTestingType := OpenModelicaModelTesting.Kind.SimpleSimulation;
 modelName := $TypeName(Modelica.Electrical.Analog.Examples.ChuaCircuit);
 compareVars :=
 {
@@ -34,6 +34,503 @@ runScript(modelTesting);getErrorString();
 // ""
 // Simulation options: startTime = 0.0, stopTime = 50000.0, numberOfIntervals = 50000, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'Modelica.Electrical.Analog.Examples.ChuaCircuit', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''
 // Result file: Modelica.Electrical.Analog.Examples.ChuaCircuit_res.mat
+// Messages: 
+// [CVODES WARNING]  CVode
+// Internal t = 17155 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 17155 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 17214.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 17214.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 17472.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 17472.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 17555.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 17555.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19596 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19596 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19650.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19650.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19911.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19911.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19998.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 19998.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22023.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22023.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22111.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22111.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22356.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22356.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22442.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 22442.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24470.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24470.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24551 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24551 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24798.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24798.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24879.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 24879.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 26931.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 26931.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 26965.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 26965.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 27239.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 27239.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 27439.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 27439.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28060.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28060.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28099.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28099.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28370.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28370.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28490.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 28490.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 29818.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 29818.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 29904.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 29904.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 30149.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 30149.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 30234 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 30234 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32270.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32270.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32331.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32331.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32588.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32588.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32671.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 32671.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 34714.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 34714.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 34763.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 34763.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 35028.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 35028.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 35122.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 35122.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 36817.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 36817.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 36863.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 36863.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 37129.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 37129.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 37228.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 37228.3 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 38909.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 38909.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 38986.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 38986.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 39235.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 39235.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 39315.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 39315.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41374 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41374 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41398 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41398 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41679.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41679.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41842.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 41842.2 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 42735.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 42735.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 42793.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 42793.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 43052.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 43052.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 43136.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 43136.6 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45173.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45173.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45234.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45234.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45491.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45491.4 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45574.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 45574.1 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 47617.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 47617.7 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 47666 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 47666 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 47930.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 47930.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 48024.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 48024.9 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 49720.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 49720.5 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 49765.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
+// [CVODES WARNING]  CVode
+// Internal t = 49765.8 and h = 1e-12 are such that t + h = t on the next step. The solver will continue anyway.
+// 
+// 
 // "true
 // "
 // ""
