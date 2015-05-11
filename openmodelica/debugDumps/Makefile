@@ -1,45 +1,47 @@
 TEST = ../../rtest -v
 
 TESTFILES = \
-backenddaeinfo.mos \
-bltdump.mos \
-dumpConstrepl.mos \
-dumpdaelow.mos \
-dumpEArepl.mos \
-dumpEncapsulateConditions.mos \
-dumpeqninorder.mos \
-dumpindxdae.mos \
-dumpinitialsystem.mos \
-dumprepl.mos \
-dumpTransformedModelica.mos \
+dumpSparsePattern.mos \
+dumpSparsePatternVerbose.mos \
 lateInline.mos \
 optdaedump.mos \
 optSimpleSolveDAEdump.mos \
 paramdlowdump.mos \
 symjacdump.mos \
+symjacdumpverbose.mos \
 tearingdump.mos \
 
+
 FAILINGTESTFILES = \
+backenddaeinfo.mos \
+bltdump.mos \
 daedumpgraphv.mos \
 daeunparser.mos \
-dump.mos \
+dumpConstrepl.mos \
+dumpdaelow.mos \
 dumpderrepl.mos \
+dumpEArepl.mos \
+dumpEncapsulateConditions.mos \
+dumpeqninorder.mos \
 dumpFPrepl.mos \
+dumpindxdae.mos \
+dumpinitialsystem.mos \
 dumpInlineSolver.mos \
+dump.mos \
 dumpoptinit.mos \
 dumpParamrepl.mos \
 dumpPPrepl.mos \
-dumpSparsePattern.mos \
-dumpSparsePatternVerbose.mos \
+dumprepl.mos \
+dumpTransformedModelica.mos \
 interactivedump.mos \
 semiLinear.mos \
 showEquationSource.mos \
 showStartOrigin.mos \
 stateselection.mos \
 symjacdumpeqn.mos \
-symjacdumpverbose.mos \
 transformsbeforedump.mos \
 uncertainties.mos \
+
 
 # Dependency files that are not .mo .mos or Makefile
 # Add them here or they will be cleaned.
