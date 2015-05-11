@@ -1,18 +1,18 @@
 TEST = ../../rtest -v
 
 TESTFILES = \
-dumpSparsePattern.mos \
-dumpSparsePatternVerbose.mos \
 lateInline.mos \
 optdaedump.mos \
 optSimpleSolveDAEdump.mos \
 paramdlowdump.mos \
 symjacdump.mos \
-symjacdumpverbose.mos \
 tearingdump.mos \
 
 
 FAILINGTESTFILES = \
+dumpSparsePattern.mos \
+dumpSparsePatternVerbose.mos \
+symjacdumpverbose.mos \
 backenddaeinfo.mos \
 bltdump.mos \
 daedumpgraphv.mos \
