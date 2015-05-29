@@ -3,7 +3,7 @@ CC = gcc
 EXT=".exe"
 endif
 
-OMBUILDDIR=../../build
+OMBUILDDIR=$(OPENMODELICAHOME)
 
 $(OMBUILDDIR)/bin/omc-diff$(EXT): lex.yy.o $(OMBUILDDIR)/bin
 	$(CC) -o $@ lex.yy.o
