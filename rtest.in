@@ -13,7 +13,7 @@ if (defined $ENV{"RTEST_OMCFLAGS"}) {
 (undef,$testTempFile) = tempfile("rtest$$.XXXXX", TMPDIR => 1, SUFFIX => ".tmp", UNLINK => 1);
 $cwd = getcwd;
 if ($cwd =~ m/(.*)testsuite\/(.+)$/) {
-  $OPENMODELICAHOME=File::Spec->rel2abs("$1testsuite/../OMCompiler/build/");
+  $OPENMODELICAHOME=File::Spec->rel2abs("$1testsuite/@OMBUILDDIR_@");
   $dirname=$2;
   $ENV{'OPENMODELICAHOME'} = $OPENMODELICAHOME;
   $ENV{'REFERENCEFILES'} = "$1testsuite/ReferenceFiles";

@@ -1,4 +1,4 @@
 AUTOMAKE_OPTIONS = foreign
 SUBDIRS =
-OMBUILDDIR = ../OMCompiler/build/
+OMBUILDDIR = @OMBUILDDIR_@
 include Makefile.common
