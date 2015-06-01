@@ -15,3 +15,4 @@ simulation/modelica/solver/externalInput.csv
 ReferenceFiles/**/*.mat
 Makefile
 rtest
+autom4te.cache
