@@ -60,7 +60,7 @@ test:
 # Cleans all files that are not listed as dependencies 
 clean :
 	@echo $(DEPENDENCIES) | sed 's/ /\\|/g' > deps.tmp
-	@rm -f $(CLEAN)
+	@rm -rf $(CLEAN)
 	@$(MAKE) -C $(HPCOM_DIR) clean
 	#@$(MAKE) -C $(UMFPACK_DIR) clean
 
