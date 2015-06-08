@@ -4003,7 +4003,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (4)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: i2.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 // 3: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 // 4: uL.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
@@ -4089,7 +4089,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (4)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: i2.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 // 3: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 // 4: uL.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
@@ -4191,7 +4191,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4276,7 +4276,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4370,7 +4370,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4464,7 +4464,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4558,7 +4558,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4652,7 +4652,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4746,7 +4746,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4840,7 +4840,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -4934,7 +4934,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac0.dummyVarNLSJac0:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac0.dummyVarNLSJac0:VARIABLE()  type: Real []
 //
 //
@@ -6335,7 +6335,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (4)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: i2.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 // 3: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 // 4: uL.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
@@ -6419,7 +6419,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (4)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: i2.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 // 3: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 // 4: uL.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
@@ -6519,7 +6519,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -6602,7 +6602,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -6694,7 +6694,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -6786,7 +6786,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -6878,7 +6878,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -6970,7 +6970,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -7062,7 +7062,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -7154,7 +7154,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
@@ -7246,7 +7246,7 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (2)
 // ========================================
-// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real []
+// 1: $res1.$pDERNLSJac1.dummyVarNLSJac1:STATE_DER()  type: Real [] unreplaceable
 // 2: u1.$pDERNLSJac1.dummyVarNLSJac1:VARIABLE()  type: Real []
 //
 //
