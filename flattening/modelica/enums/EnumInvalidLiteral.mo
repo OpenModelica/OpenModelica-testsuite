@@ -15,11 +15,13 @@ end EnumInvalidLiteral;
 
 // Result:
 // Error processing file: EnumInvalidLiteral.mo
+// Failed to parse file: EnumInvalidLiteral.mo!
+//
 // [flattening/modelica/enums/EnumInvalidLiteral.mo:9:3-9:38:writable] Error: Invalid use of reserved attribute name start as enumeration literal.
-// Error: Error occurred while flattening model EnumInvalidLiteral
 //
 // # Error encountered! Exiting...
 // # Please check the error message and the flags.
+// Failed to parse file: EnumInvalidLiteral.mo!
 //
 // Execution failed!
 // endResult
