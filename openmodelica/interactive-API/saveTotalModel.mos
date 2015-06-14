@@ -1291,8 +1291,11 @@ readFile("BranchingDynamicPipes.mo");
 //
 //     package Types  \"Common types for fluid models\"
 //       extends Modelica.Icons.TypesPackage;
+//
 //       type Dynamics = enumeration(DynamicFreeInitial \"DynamicFreeInitial -- Dynamic balance, Initial guess value\", FixedInitial \"FixedInitial -- Dynamic balance, Initial value fixed\", SteadyStateInitial \"SteadyStateInitial -- Dynamic balance, Steady state initial with guess value\", SteadyState \"SteadyState -- Steady state balance, Initial guess value\") \"Enumeration to define definition of balance equations\";
+//
 //       type PortFlowDirection = enumeration(Entering \"Fluid flow is only entering\", Leaving \"Fluid flow is only leaving\", Bidirectional \"No restrictions on fluid flow (flow reversal possible)\") \"Enumeration to define whether flow reversal is allowed\";
+//
 //       type ModelStructure = enumeration(av_vb \"av_vb: port_a - volume - flow model - volume - port_b\", a_v_b \"a_v_b: port_a - flow model - volume - flow model - port_b\", av_b \"av_b: port_a - volume - flow model - port_b\", a_vb \"a_vb: port_a - flow model - volume - port_b\") \"Enumeration with choices for model structure in distributed pipe model\";
 //     end Types;
 //
@@ -1855,7 +1858,9 @@ readFile("BranchingDynamicPipes.mo");
 //
 //       package Choices  \"Types, constants to define menu choices\"
 //         extends Modelica.Icons.Package;
+//
 //         type IndependentVariables = enumeration(T \"Temperature\", pT \"Pressure, Temperature\", ph \"Pressure, Specific Enthalpy\", phX \"Pressure, Specific Enthalpy, Mass Fraction\", pTX \"Pressure, Temperature, Mass Fractions\", dTX \"Density, Temperature, Mass Fractions\") \"Enumeration defining the independent variables of a medium\";
+//
 //         type ReferenceEnthalpy = enumeration(ZeroAt0K \"The enthalpy is 0 at 0 K (default), if the enthalpy of formation is excluded\", ZeroAt25C \"The enthalpy is 0 at 25 degC, if the enthalpy of formation is excluded\", UserDefined \"The user-defined reference enthalpy is used at 293.15 K (25 degC)\") \"Enumeration defining the reference enthalpy of a medium\" annotation(Evaluate = true);
 //       end Choices;
 //
