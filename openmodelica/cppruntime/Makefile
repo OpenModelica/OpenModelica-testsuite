@@ -40,6 +40,7 @@ testTables2D.txt \
 hpcom \
 umfpack \
 fmu \
+staticLinking \
 ReferenceFiles \
 libraries
 
