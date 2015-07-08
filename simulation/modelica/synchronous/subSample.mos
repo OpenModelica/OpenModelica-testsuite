@@ -134,8 +134,13 @@ translateModel(test_subSample); getErrorString();
 // 
 // 
 // no matching
-// 
-// 
+//
+//
+//
+// Base clocks (1)
+// ========================================
+// 1: Clock(0.01)
+//
 // true
 // ""
 // endResult
