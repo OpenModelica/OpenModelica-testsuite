@@ -3,7 +3,7 @@
 // status: correct
 // teardown_command: rm -rf _ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.* ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve_* ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.exe ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.cpp ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.makefile ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.libs ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.log ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.c ThermoSysPro.Examples.SimpleExamples.TestDynamicReliefValve.o output.log
 //
-// Simulation Results 
+// Simulation Results
 // Modelica Standard Library
 //
 
@@ -41,7 +41,7 @@ getEnvironmentVar("REFERENCEFILES")+"/ThermoSysPro/ThermoSysPro.Examples.SimpleE
 // |                 | |       | | The non-linear solver tries to solve the problem that could take some time.
 // |                 | |       | | It could help to provide better start-values for the iteration variables.
 // |                 | |       | | For more information simulate with -lv LOG_NLS
-// assert            | debug   | Solving non-linear system 119 failed at time=0.
+// assert            | debug   | Solving non-linear system 94 failed at time=0.
 // |                 | |       | For more information please use -lv LOG_NLS.
 // assert            | info    | simulation terminated by an assertion at initialization
 // "

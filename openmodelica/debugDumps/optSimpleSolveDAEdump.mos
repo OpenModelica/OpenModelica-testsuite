@@ -1,9 +1,9 @@
 // name: optSimpleSolveDAEdump
 // keywords: omc debug dump
 // status: correct
-// 
+//
 // omc debug dump: +d=optdaedump
-// 
+//
 
 loadString("
 model testOptdaedump
@@ -50,6 +50,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): if noEvent(x > 0.0) then 1.0 + 3.0 * z else 2.0 + 5.0 * z = y    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -74,10 +78,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -126,6 +126,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): z = if noEvent(x > 0.0) then y / 3.0 - 0.3333333333333333 else 0.2 * y - 0.4    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -162,10 +166,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -214,6 +214,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): x = 0.5 * log((1.0 + 0.9 * sin(10.0 * time)) / (1.0 - 0.9 * sin(10.0 * time)))    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -238,10 +242,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -289,6 +289,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): x = 0.5 * log((1.0 + 0.9 * sin(10.0 * time)) / (1.0 - 0.9 * sin(10.0 * time)))    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -327,10 +331,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -378,6 +378,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): x = 0.5 * log((1.0 + 0.9 * sin(10.0 * time)) / (1.0 - 0.9 * sin(10.0 * time)))    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -414,10 +418,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -465,6 +465,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): x = 0.5 * log((1.0 + 0.9 * sin(10.0 * time)) / (1.0 - 0.9 * sin(10.0 * time)))    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -501,10 +505,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -552,6 +552,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): x = 0.5 * log((1.0 + 0.9 * sin(10.0 * time)) / (1.0 - 0.9 * sin(10.0 * time)))    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -588,10 +592,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -639,6 +639,10 @@ buildModel(testOptdaedump); getErrorString();
 // 3/3 (1): x = 0.5 * log((1.0 + 0.9 * sin(10.0 * time)) / (1.0 - 0.9 * sin(10.0 * time)))    [dynamic]
 //
 //
+// Simple Equations (0, 0)
+// ========================================
+//
+//
 // State Sets
 // ========================================
 //
@@ -675,10 +679,6 @@ buildModel(testOptdaedump); getErrorString();
 //
 //
 // Alias Variables (0)
-// ========================================
-//
-//
-// Simple Equations (0, 0)
 // ========================================
 //
 //

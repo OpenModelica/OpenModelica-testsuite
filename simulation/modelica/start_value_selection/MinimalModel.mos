@@ -38,7 +38,7 @@ buildModel(MinimalModel); getErrroString();
 // ########################################
 //
 //
-// unspecified partition
+// continuous time partition
 // ========================================
 //
 // Variables (0)
@@ -46,6 +46,10 @@ buildModel(MinimalModel); getErrroString();
 //
 //
 // Equations (0, 0)
+// ========================================
+//
+//
+// Simple Equations (0, 0)
 // ========================================
 //
 //
@@ -85,10 +89,6 @@ buildModel(MinimalModel); getErrroString();
 // 1: d:VARIABLE()  = -(-const_k) .MinimalModel, .Real type: Real []
 // 2: c:VARIABLE()  = -const_k .MinimalModel, .Real type: Real []
 // 3: a:VARIABLE()  = const_k .MinimalModel, .Real type: Real []
-//
-//
-// Simple Equations (0, 0)
-// ========================================
 //
 //
 // Initial Equations (0, 0)

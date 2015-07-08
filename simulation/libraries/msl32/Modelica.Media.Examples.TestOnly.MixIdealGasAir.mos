@@ -33,13 +33,13 @@ runScript(modelTesting);getErrorString();
 // Result file: Modelica.Media.Examples.TestOnly.MixIdealGasAir_res.mat
 // Files Equal!
 // Warning: Alias set with different nominal values
-//  * candidate: medium2.state.p(nominal = 1000000.0)
-//  * candidate: medium2.p(nominal = 100000.0)
-// => select value from medium2.p(nominal = 100000.0) for variable: medium2.p
-// Warning: Alias set with different nominal values
 //  * candidate: medium.state.p(nominal = 1000000.0)
 //  * candidate: medium.p(nominal = 100000.0)
 // => select value from medium.p(nominal = 100000.0) for variable: medium.p
+// Warning: Alias set with different nominal values
+//  * candidate: medium2.state.p(nominal = 1000000.0)
+//  * candidate: medium2.p(nominal = 100000.0)
+// => select value from medium2.p(nominal = 100000.0) for variable: medium2.p
 //
 // "true
 // "

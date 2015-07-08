@@ -36,7 +36,7 @@ getErrorString();
 //     messages = "
 // Optimizer Variables
 // ========================================================
-// Input[0]:OMC$Input2(start = 0, nominal = 10, min = 0, max = 10)
+// Input[0]:OMC$Input3(start = 0, nominal = 10, min = 0, max = 10)
 // --------------------------------------------------------
 // number of nonlinear constraints: 1
 // ========================================================

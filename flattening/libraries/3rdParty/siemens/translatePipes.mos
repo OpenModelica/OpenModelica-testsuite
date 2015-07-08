@@ -55,7 +55,80 @@ getErrorString();
 // => select value from SH.h[1](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 3)[1]) for variable: SH.h[1]
 // "
 // true
-// "Warning: Alias set with several free start values
+// "Warning: Alias set with different nominal values
+//  * candidate: SH.portIn.p(nominal = 100000.0)
+//  * candidate: watersource_ph.port.p(nominal = 100000.0)
+//  * candidate: watersource_ph.p(nominal = 500000.0)
+// => select value from watersource_ph.p(nominal = 500000.0) for variable: timeTable2.C1signal.y
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[10](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[10].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[10].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[10].T(nominal = 300.0)
+// => select value from SH.TWall[10](nominal = 400.0) for variable: SH.heatport.TWall[10]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[9](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[9].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[9].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[9].T(nominal = 300.0)
+// => select value from SH.TWall[9](nominal = 400.0) for variable: SH.heatport.TWall[9]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[8](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[8].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[8].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[8].T(nominal = 300.0)
+// => select value from SH.TWall[8](nominal = 400.0) for variable: SH.heatport.TWall[8]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[7](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[7].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[7].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[7].T(nominal = 300.0)
+// => select value from SH.TWall[7](nominal = 400.0) for variable: SH.heatport.TWall[7]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[6](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[6].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[6].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[6].T(nominal = 300.0)
+// => select value from SH.TWall[6](nominal = 400.0) for variable: SH.heatport.TWall[6]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[5](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[5].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[5].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[5].T(nominal = 300.0)
+// => select value from SH.TWall[5](nominal = 400.0) for variable: SH.heatport.TWall[5]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[4](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[4].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[4].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[4].T(nominal = 300.0)
+// => select value from SH.TWall[4](nominal = 400.0) for variable: SH.heatport.TWall[4]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[3](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[3].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[3].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[3].T(nominal = 300.0)
+// => select value from SH.TWall[3](nominal = 400.0) for variable: SH.heatport.TWall[3]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[2](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[2].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[2].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[2].T(nominal = 300.0)
+// => select value from SH.TWall[2](nominal = 400.0) for variable: SH.heatport.TWall[2]
+// Warning: Alias set with different nominal values
+//  * candidate: SH.TWall[1](nominal = 400.0)
+//  * candidate: SH.wall.layer[1].port_int[1].T(nominal = 300.0)
+//  * candidate: SH.wall.port_int[1].T(nominal = 300.0)
+//  * candidate: SH.heatport.port[1].T(nominal = 300.0)
+// => select value from SH.TWall[1](nominal = 400.0) for variable: SH.heatport.TWall[1]
+// Warning: Alias set with several free start values
+//  * candidate: SH.h[10](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[10])
+//  * candidate: SH.portOut.h_outflow(start = SH.hOut_start)
+// => select value from SH.h[10](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[10]) for variable: SH.h[10]
+// Warning: Alias set with several free start values
+//  * candidate: SH.h[1](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[1])
+//  * candidate: SH.portIn.h_outflow(start = SH.hIn_start)
+// => select value from SH.h[1](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[1]) for variable: SH.h[1]
+// Warning: Alias set with several free start values
 //  * candidate: ECO.portOut.p(start = ECO.pOut_start)
 //  * candidate: EVA.portIn.p(start = EVA.pIn_start)
 // => select value from ECO.portOut.p(start = ECO.pOut_start) for variable: ECO.portOut.p
@@ -260,78 +333,5 @@ getErrorString();
 //  * candidate: EVA.h[1](start = SiemensPower.Utilities.Functions.my_linspace(EVA.hIn_start, EVA.hOut_start, 20)[1])
 //  * candidate: EVA.portIn.h_outflow(start = EVA.hIn_start)
 // => select value from EVA.h[1](start = SiemensPower.Utilities.Functions.my_linspace(EVA.hIn_start, EVA.hOut_start, 20)[1]) for variable: EVA.h[1]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.portIn.p(nominal = 100000.0)
-//  * candidate: watersource_ph.port.p(nominal = 100000.0)
-//  * candidate: watersource_ph.p(nominal = 500000.0)
-// => select value from watersource_ph.p(nominal = 500000.0) for variable: timeTable2.C1signal.y
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[10](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[10].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[10].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[10].T(nominal = 300.0)
-// => select value from SH.TWall[10](nominal = 400.0) for variable: SH.heatport.TWall[10]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[9](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[9].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[9].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[9].T(nominal = 300.0)
-// => select value from SH.TWall[9](nominal = 400.0) for variable: SH.heatport.TWall[9]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[8](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[8].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[8].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[8].T(nominal = 300.0)
-// => select value from SH.TWall[8](nominal = 400.0) for variable: SH.heatport.TWall[8]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[7](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[7].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[7].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[7].T(nominal = 300.0)
-// => select value from SH.TWall[7](nominal = 400.0) for variable: SH.heatport.TWall[7]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[6](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[6].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[6].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[6].T(nominal = 300.0)
-// => select value from SH.TWall[6](nominal = 400.0) for variable: SH.heatport.TWall[6]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[5](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[5].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[5].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[5].T(nominal = 300.0)
-// => select value from SH.TWall[5](nominal = 400.0) for variable: SH.heatport.TWall[5]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[4](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[4].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[4].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[4].T(nominal = 300.0)
-// => select value from SH.TWall[4](nominal = 400.0) for variable: SH.heatport.TWall[4]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[3](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[3].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[3].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[3].T(nominal = 300.0)
-// => select value from SH.TWall[3](nominal = 400.0) for variable: SH.heatport.TWall[3]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[2](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[2].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[2].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[2].T(nominal = 300.0)
-// => select value from SH.TWall[2](nominal = 400.0) for variable: SH.heatport.TWall[2]
-// Warning: Alias set with different nominal values
-//  * candidate: SH.TWall[1](nominal = 400.0)
-//  * candidate: SH.wall.layer[1].port_int[1].T(nominal = 300.0)
-//  * candidate: SH.wall.port_int[1].T(nominal = 300.0)
-//  * candidate: SH.heatport.port[1].T(nominal = 300.0)
-// => select value from SH.TWall[1](nominal = 400.0) for variable: SH.heatport.TWall[1]
-// Warning: Alias set with several free start values
-//  * candidate: SH.h[10](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[10])
-//  * candidate: SH.portOut.h_outflow(start = SH.hOut_start)
-// => select value from SH.h[10](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[10]) for variable: SH.h[10]
-// Warning: Alias set with several free start values
-//  * candidate: SH.h[1](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[1])
-//  * candidate: SH.portIn.h_outflow(start = SH.hIn_start)
-// => select value from SH.h[1](start = SiemensPower.Utilities.Functions.my_linspace(SH.hIn_start, SH.hOut_start, 10)[1]) for variable: SH.h[1]
 // "
 // endResult
