@@ -1,7 +1,7 @@
 // name: OMCC
 // status: correct
 // cflags: +g=MetaModelica +d=rml
-runScript("LoadCompilerSources.mos");
+// runScript("LoadCompilerSources.mos");
 
 getErrorString();
 
