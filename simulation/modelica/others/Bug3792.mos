@@ -1,0 +1,55 @@
+// name: Bug3792
+// status: correct
+
+loadString("
+model restartOverrideBug
+  parameter Real a = 1;
+  Real x(start=1);
+  Real y;
+equation
+  y = der(x);
+  der(y) = a * x;
+end restartOverrideBug;
+");
+getErrorString();
+
+// Standard run
+simulate(restartOverrideBug, simflags="-output a,y");
+
+// Restart without override
+simulate(restartOverrideBug, simflags="-r=tmp.mat -iit=1.0 -iif=restartOverrideBug_res.mat -iim=none -output a,y");
+
+// Restart with override
+simulate(restartOverrideBug, simflags="-r=tmp.mat -iit=1.0 -iif=restartOverrideBug_res.mat -iim=none -output a,y -override a=2");
+
+// No restart, but with override
+simulate(restartOverrideBug, simflags="-r=tmp.mat -output a,y -override a=2");
+
+// Result:
+// true
+// ""
+// record SimulationResult
+//     resultFile = "restartOverrideBug_res.mat",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'restartOverrideBug', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-output a,y'",
+//     messages = "time=1,a=1,y=1.1752043687460842492
+// "
+// end SimulationResult;
+// record SimulationResult
+//     resultFile = "restartOverrideBug_res.mat",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'restartOverrideBug', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-r=tmp.mat -iit=1.0 -iif=restartOverrideBug_res.mat -iim=none -output a,y'",
+//     messages = "time=1,a=1,y=3.6269191671161418178
+// "
+// end SimulationResult;
+// record SimulationResult
+//     resultFile = "restartOverrideBug_res.mat",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'restartOverrideBug', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-r=tmp.mat -iit=1.0 -iif=restartOverrideBug_res.mat -iim=none -output a,y -override a=2'",
+//     messages = "time=1,a=2,y=3.6269191671161418178
+// "
+// end SimulationResult;
+// record SimulationResult
+//     resultFile = "restartOverrideBug_res.mat",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 500, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'restartOverrideBug', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = '-r=tmp.mat -output a,y -override a=2'",
+//     messages = "time=1,a=2,y=2.7366075312818343157
+// "
+// end SimulationResult;
+// endResult
