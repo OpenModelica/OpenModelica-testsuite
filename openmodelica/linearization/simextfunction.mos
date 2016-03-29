@@ -8,7 +8,6 @@
 //linearize with numeric linearization and data recovery at time 0
 loadFile("modelextfunction.mo");
 simulate(extfunction, simflags="-l=0 -l_datarec");
-system("./extfunction -l=0 -l_datarec");
 getErrorString();
 loadFile("linear_extfunction.mo");
 list(linear_extfunction);
@@ -56,7 +55,6 @@ readFile("linear_extfunction.log"); // Check that output log is empty
 // stdout            | info    | Linear model is created!
 // "
 // end SimulationResult;
-// 1
 // "Warning: The initial conditions are not fully specified. Use +d=initialization for more information.
 // "
 // true
