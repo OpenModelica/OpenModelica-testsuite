@@ -38,9 +38,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -65,7 +65,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: simulation
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -122,9 +126,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -149,7 +153,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: initialization
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -205,9 +213,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -246,7 +254,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: initialization
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -302,9 +314,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -341,7 +353,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: initialization
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -397,9 +413,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -436,7 +452,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: initialization
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -492,9 +512,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -531,7 +551,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: initialization
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -587,9 +611,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -626,7 +650,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: initialization
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -682,9 +710,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -721,7 +749,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: initialization
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
@@ -778,9 +810,9 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Variables (3)
 // ========================================
-// 1: z:VARIABLE() .testOptdaedump, .Real type: Real
-// 2: y:VARIABLE() .testOptdaedump, .Real type: Real
-// 3: x:VARIABLE() .testOptdaedump, .Real type: Real
+// 1: z:VARIABLE() .testOptdaedump, .Real type: Real 
+// 2: y:VARIABLE() .testOptdaedump, .Real type: Real 
+// 3: x:VARIABLE() .testOptdaedump, .Real type: Real 
 //
 //
 // Equations (3, 3)
@@ -817,7 +849,11 @@ buildModel(testOptdaedump); getErrorString();
 // BackendDAEType: simulation
 //
 //
-// Known Variables (constants) (0)
+// Known Variables (dependent on constants or parameters) (0)
+// ========================================
+//
+//
+// Global Variables (dependent on time, states, inputs) (0)
 // ========================================
 //
 //
