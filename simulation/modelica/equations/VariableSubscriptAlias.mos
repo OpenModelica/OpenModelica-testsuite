@@ -4,19 +4,15 @@
 // teardown_command: rm -rf PowerSystems.Examples.Spot.AC1ph_DC.Transformer* VariableSubscriptAlias VariableSubscriptAlias.exe VariableSubscriptAlias.cpp VariableSubscriptAlias.makefile VariableSubscriptAlias.libs VariableSubscriptAlias.log output.log
 // 
 //
-loadModel(Modelica,{"3.2.1"}); getErrorString();
-loadModel(PowerSystems); getErrorString();getErrorString();
-simulate(PowerSystems.Examples.Spot.AC1ph_DC.Transformer);getErrorString(); //dont handle equations like scalarVariable = arrayParameter[variable] as alias;
+loadFile("Transformer.mo"); getErrorString();
+
+simulate(Transformer_total);getErrorString(); //dont handle equations like scalarVariable = arrayParameter[variable] as alias;
 // Result:
 // true
-// "Notification: Skipped loading package Complex (3.2.1,default) using MODELICAPATH D:/Programming/OPENMODELICA_GIT/OpenModelica/build/lib/omlibrary (uses-annotation may be wrong).
-// "
-// true
-// ""
 // ""
 // record SimulationResult
-//     resultFile = "PowerSystems.Examples.Spot.AC1ph_DC.Transformer_res.mat",
-//     simulationOptions = "startTime = 0.0, stopTime = 3.0, numberOfIntervals = 7500, tolerance = 1e-006, method = 'dassl', fileNamePrefix = 'PowerSystems.Examples.Spot.AC1ph_DC.Transformer', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''",
+//     resultFile = "Transformer_total_res.mat",
+//     simulationOptions = "startTime = 0.0, stopTime = 3.0, numberOfIntervals = 7500, tolerance = 1e-006, method = 'dassl', fileNamePrefix = 'Transformer_total', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''",
 //     messages = ""
 // end SimulationResult;
 // "Warning: The initial conditions are not fully specified. Use +d=initialization for more information.
