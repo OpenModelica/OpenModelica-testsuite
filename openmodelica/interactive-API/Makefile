@@ -63,6 +63,7 @@ stringSplit.mos \
 strings.mos  \
 variables.mos \
 getDefinitions.mos \
+GenDoc.mos \
 
 
 # test that currently fail. Move up when fixed.
