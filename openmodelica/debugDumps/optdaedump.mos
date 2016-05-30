@@ -2209,10 +2209,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -2303,10 +2307,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -2408,10 +2416,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -2512,10 +2524,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -2616,10 +2632,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -2720,10 +2740,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -2824,10 +2848,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -2928,10 +2956,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -3032,10 +3064,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -3136,10 +3172,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = i1SeedLSJac0  type: Real 
+// 2: uL.$pDERLSJac0.dummyVarLSJac0:VARIABLE()  = -u1.$pDERLSJac0.dummyVarLSJac0  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -4982,10 +5022,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5078,10 +5122,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5185,10 +5233,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5291,10 +5343,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5397,10 +5453,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5503,10 +5563,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5609,10 +5673,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5715,10 +5783,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5821,10 +5893,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
@@ -5927,10 +6003,14 @@ buildModel(testOptdaedump); getErrorString();
 //
 // Known variables only depending on states and inputs - localKnownVars (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // External Objects (0)
 // ========================================
+// 1: i2.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = i1SeedLSJac1  type: Real 
+// 2: uL.$pDERLSJac1.dummyVarLSJac1:VARIABLE()  = -u1.$pDERLSJac1.dummyVarLSJac1  type: Real 
 //
 //
 // Classes of External Objects (0)
