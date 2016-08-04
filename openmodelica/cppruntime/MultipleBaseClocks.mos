@@ -6,6 +6,7 @@
 //
 
 loadModel(Modelica, languageStandard="3.3");getErrorString();
+loadModel(Modelica_Synchronous); getErrorString();
 loadFile("MultipleBaseClocks.mo");getErrorString();
 setCommandLineOptions("+simCodeTarget=Cpp");getErrorString();
 
@@ -18,10 +19,20 @@ res := OpenModelica.Scripting.compareSimulationResults("MultipleBaseClocks_res.m
 
 // Result:
 // true
+// ""
+// true
+// ""
+// true
+// ""
+// true
+// ""
 // record SimulationResult
 //     resultFile = "MultipleBaseClocks_res.mat",
-//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 100, tolerance = 0.0000000001, method = 'dassl', fileNamePrefix = 'MultipleBaseClocks', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 100, tolerance = 1e-010, method = 'dassl', fileNamePrefix = 'MultipleBaseClocks', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''",
 //     messages = ""
 // end SimulationResult;
+// "Warning: Requested package Modelica of version 3.2.1, but this package was already loaded with version 3.2.2. You might experience problems if these versions are incompatible.
+// "
 // {"Files Equal!"}
+// ""
 // endResult
