@@ -36,7 +36,8 @@ resolveLoops.log \
 evalConstFuncs.log \
 flatteningBuildings.log \
 buildings.log \
-modelica3d.log
+modelica3d.log \
+visualization.log
 
 SIMULATIONLOGS = \
 linearization.log \
@@ -559,6 +560,9 @@ hummod.log: omc-diff
 	@echo $@ done
 openmodelicadiff.log: omc-diff
 	$(MAKE) -C openmodelica/diff -f Makefile test > $@
+	@echo $@ done
+visualization.log: omc-diff
+	$(MAKE) -C openmodelica/visualization -f Makefile test > $@
 	@echo $@ done
 
 failingtest: omc-diff
