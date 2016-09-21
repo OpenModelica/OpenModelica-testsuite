@@ -46,7 +46,7 @@ runScript(modelTesting);getErrorString();
 // [Modelica 3.1/Electrical/Machines.mo:7500:7-7502:73:writable] Warning: Parameter dcse.La has no value, and is fixed during initialization (fixed=true), using available start value (start=0.0015) as default value.
 // [Modelica 3.1/Electrical/Machines.mo:3112:9-3114:50:writable] Warning: Parameter dcse.Re has no value, and is fixed during initialization (fixed=true), using available start value (start=0.01) as default value.
 // [Modelica 3.1/Electrical/Machines.mo:3115:9-3117:50:writable] Warning: Parameter dcse.Le has no value, and is fixed during initialization (fixed=true), using available start value (start=0.0005) as default value.
-// Warning: The initial conditions are not fully specified. Use +d=initialization for more information.
+// Warning: The initial conditions are not fully specified. For more information set +d=initialization. In OMEdit Tools->Options->Simulation->OMCFlags, in OMNotebook call setCommandLineOptions("+d=initialization").
 //
 // "true
 // "
