@@ -34,6 +34,7 @@ GetComponents.mos \
 getDialogAnnotation.mos \
 IfStatementIllegal.mos \
 IfStatement.mos\
+importFMUModelDescription.mos \
 interactive_api_annotations.mos \
 interactive_api_attributes.mos \
 interactive_api_calls.mos \

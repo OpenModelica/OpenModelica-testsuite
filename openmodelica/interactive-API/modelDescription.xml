@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fmiModelDescription
+  fmiVersion="2.0"
+  modelName="Modelica.Blocks.Math.Gain"
+  guid="{7d869a2a-fbc4-4e1a-b7bc-ec1129abcb04}"
+  description="Output the product of a gain value with the input signal"
+  generationTool="OpenModelica Compiler OpenModelica v1.11.0-dev-77-g863a98b"
+  generationDateAndTime="2016-09-28T13:08:18Z"
+  variableNamingConvention="structured"
+  numberOfEventIndicators="0">
+  <ModelExchange
+    modelIdentifier="Modelica_Blocks_Math_Gain">
+  </ModelExchange>
+  <LogCategories>
+    <Category name="logEvents" />
+    <Category name="logSingularLinearSystems" />
+    <Category name="logNonlinearSystems" />
+    <Category name="logDynamicStateSelection" />
+    <Category name="logStatusWarning" />
+    <Category name="logStatusDiscard" />
+    <Category name="logStatusError" />
+    <Category name="logStatusFatal" />
+    <Category name="logStatusPending" />
+    <Category name="logAll" />
+    <Category name="logFmi2Call" />
+  </LogCategories>
+  <DefaultExperiment startTime="0.0" stopTime="1.0" tolerance="1e-006"/>
+  <ModelVariables>
+  <!-- Index of variable = "1" -->
+  <ScalarVariable
+    name="u"
+    valueReference="0"
+    description="Input signal connector"
+    variability="continuous"
+    causality="input"
+    >
+    <Real start="0.0"/>
+  </ScalarVariable>
+  <!-- Index of variable = "2" -->
+  <ScalarVariable
+    name="y"
+    valueReference="1"
+    description="Output signal connector"
+    variability="continuous"
+    causality="output"
+    initial="calculated">
+    <Real/>
+  </ScalarVariable>
+  <!-- Index of variable = "3" -->
+  <ScalarVariable
+    name="k"
+    valueReference="2"
+    description="Gain value multiplied with input signal"
+    variability="fixed"
+    causality="parameter"
+    initial="exact">
+    <Real start="1.0"/>
+  </ScalarVariable>
+  </ModelVariables>
+  <ModelStructure>
+    <Outputs>
+    </Outputs>
+  </ModelStructure>
+</fmiModelDescription>
