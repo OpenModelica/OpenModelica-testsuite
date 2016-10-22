@@ -37,6 +37,7 @@ ParameterModel.mos \
 Pendulum.mos \
 PreAndAliasedVar.mos \
 PreMatrix.mos \
+PCtoTC.mos \
 Random.mos \
 Random2.mos \
 Reductions.mos \
