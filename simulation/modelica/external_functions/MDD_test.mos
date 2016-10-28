@@ -7,6 +7,7 @@
 //
 
 loadModel(Modelica,{"3.2.2"});getErrorString();
+loadModel(Modelica_Synchronous); getErrorString();
 loadModel(Modelica_DeviceDrivers); getErrorString();
 loadFile("MDD_test.mo"); getErrorString();
 buildModel(MDD_test); getErrorString();
@@ -17,7 +18,8 @@ buildModel(MDD_test); getErrorString();
 // ""
 // true
 // ""
+// true
+// ""
 // {"MDD_test","MDD_test_init.xml"}
-// "Warning: Requested package Modelica of version 3.2.1, but this package was already loaded with version 3.2.2. You might experience problems if these versions are incompatible.
-// "
+// ""
 // endResult

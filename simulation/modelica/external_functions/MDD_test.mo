@@ -109,5 +109,4 @@ equation
       points={{-36,19.2},{-36,10.8}},
       color={0,0,0},
       smooth=Smooth.None));
-  annotation (uses(Modelica(version="3.2.1")));
 end MDD_test;
