@@ -1,6 +1,7 @@
 TEST=../../rtest -v
 
 TESTFILES=\
+testVis.mos \
 XmlDumpComment.mos \
 testMSD.mos \
 SimpleTriggeredTrapezoid.mos \
@@ -15,7 +16,8 @@ FAILINGTESTFILES= \
 DEPENDENCIES = \
 *.mo \
 *.mos \
-Makefile 
+Makefile \
+testVisRef_visual.xml
 
 
 CLEAN = `ls | grep -w -v -f deps.tmp`

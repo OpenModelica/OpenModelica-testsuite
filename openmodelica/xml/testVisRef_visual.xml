@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<visualization>
+  <shape>
+      <ident>world.gravityArrowLine</ident>
+      <type>cylinder</type>
+      <T>    <exp>1.0</exp>	
+          <exp>0.0</exp>	
+          <exp>0.0</exp>
+          <exp>0.0</exp>	
+          <exp>1.0</exp>	
+          <exp>0.0</exp>
+          <exp>0.0</exp>	
+          <exp>0.0</exp>	
+          <exp>1.0</exp></T>
+      <r>    <exp>0.0</exp>	
+          <exp>0.0</exp>	
+          <exp>0.0</exp></r>
+      <r_shape>    <cref>world.gravityArrowLine.r_shape[1]</cref>	
+          <cref>world.gravityArrowLine.r_shape[2]</cref>	
+          <cref>world.gravityArrowLine.r_shape[3]</cref></r_shape>
+      <lengthDir>    <exp>0.0</exp>	
+          <exp>-1.0</exp>	
+          <exp>0.0</exp></lengthDir>
+      <widthDir>    <exp>0.0</exp>	
+          <exp>1.0</exp>	
+          <exp>0.0</exp></widthDir>
+      <length>    <cref>world.gravityArrowLine.length</cref></length>
+      <width>    <cref>world.gravityArrowLine.width</cref></width>
+      <height>    <cref>world.gravityArrowLine.height</cref></height>
+      <extra>    <exp>0.0</exp></extra>
+      <color>    <exp>0.0</exp>	
+          <exp>230.0</exp>	
+          <exp>0.0</exp></color>
+      <specCoeff>    <exp>0.0</exp></specCoeff>
+  </shape>
+  <shape>
+      <ident>world.gravityArrowHead</ident>
+      <type>cone</type>
+      <T>    <exp>1.0</exp>	
+          <exp>0.0</exp>	
+          <exp>0.0</exp>
+          <exp>0.0</exp>	
+          <exp>1.0</exp>	
+          <exp>0.0</exp>
+          <exp>0.0</exp>	
+          <exp>0.0</exp>	
+          <exp>1.0</exp></T>
+      <r>    <exp>0.0</exp>	
+          <exp>0.0</exp>	
+          <exp>0.0</exp></r>
+      <r_shape>    <cref>world.gravityArrowHead.r_shape[1]</cref>	
+          <cref>world.gravityArrowHead.r_shape[2]</cref>	
+          <cref>world.gravityArrowHead.r_shape[3]</cref></r_shape>
+      <lengthDir>    <exp>0.0</exp>	
+          <exp>-1.0</exp>	
+          <exp>0.0</exp></lengthDir>
+      <widthDir>    <exp>0.0</exp>	
+          <exp>1.0</exp>	
+          <exp>0.0</exp></widthDir>
+      <length>    <cref>world.gravityArrowHead.length</cref></length>
+      <width>    <cref>world.gravityArrowHead.width</cref></width>
+      <height>    <cref>world.gravityArrowHead.height</cref></height>
+      <extra>    <exp>0.0</exp></extra>
+      <color>    <exp>0.0</exp>	
+          <exp>230.0</exp>	
+          <exp>0.0</exp></color>
+      <specCoeff>    <exp>0.0</exp></specCoeff>
+  </shape>
+</visualization>
