@@ -1,0 +1,26 @@
+// name:     MDD_test
+// keywords: MDD_test
+// status:   correct
+// teardown_command: rm -rf MDD_test_*
+//
+//  Checks that external object aliases are recognized properly. Otherwise the system has too many equations.
+//
+
+loadModel(Modelica);getErrorString();
+loadModel(Modelica_DeviceDrivers); getErrorString();
+loadFile("MDD_test.mo"); getErrorString();
+buildModel(MDD_test); getErrorString();
+// Result:
+// true
+// ""
+// true
+// ""
+// true
+// ""
+// {"MDD_test","MDD_test_init.xml"}
+// "Warning: Requested package Modelica of version 3.2.1, but this package was already loaded with version 3.2.2. You might experience problems if these versions are incompatible.
+// [Modelica_DeviceDrivers 1.4.4/Blocks/Communication.mo:213:34-213:109:writable] Warning: OpenModelica requires that all external objects input arguments are possible to evaluate before initialization in order to avoid odd run-time failures, but if autoBufferSize then bufferSize else userBufferSize is a variable.
+// [Modelica_DeviceDrivers 1.4.4/Blocks/Communication.mo:221:5-221:126:writable] Warning: OpenModelica requires that all external objects input arguments are possible to evaluate before initialization in order to avoid odd run-time failures, but if autoBufferSize then bufferSize else userBufferSize is a variable.
+// Notification: pthreads library is already available. It is not linked from the external library resource directory.
+// "
+// endResult
