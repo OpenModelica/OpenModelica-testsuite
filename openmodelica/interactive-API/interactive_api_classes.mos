@@ -113,7 +113,8 @@ getDocumentationAnnotation(M);
 // Evaluating: getErrorString()
 // ""
 // Evaluating: getIconAnnotation(A.test)
-// {annotation(Icon(extent = {{0, 0}, {100, 100}}, graphics = {Line(points = {{0, 0}, {100, 100}})})) }
+// {annotation(
+//   Icon(extent = {{0, 0}, {100, 100}}, graphics = {Line(points = {{0, 0}, {100, 100}})})) }
 // Evaluating: getErrorString()
 // ""
 // Evaluating: addClassAnnotation(A.test, annotate = Icon(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}))
@@ -131,7 +132,10 @@ getDocumentationAnnotation(M);
 //   model test
 //     Integer x = 33;
 //     Real z;
-//     annotation(Icon(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}), Diagram(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}), Documentation(info = \"<HTML>foo</HTML>\", revisions = \"1.0\"));
+//     annotation(
+//       Icon(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}),
+//       Diagram(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}),
+//       Documentation(info = \"<HTML>foo</HTML>\", revisions = \"1.0\"));
 //   end test;
 // end A;"
 // Evaluating: getErrorString()
@@ -189,7 +193,8 @@ getDocumentationAnnotation(M);
 // Evaluating: getErrorString()
 // ""
 // Evaluating: getIconAnnotation(A.test)
-// {annotation(Icon(extent = {{0, 0}, {100, 100}}, graphics = {Line(points = {{0, 0}, {100, 100}})})) }
+// {annotation(
+//   Icon(extent = {{0, 0}, {100, 100}}, graphics = {Line(points = {{0, 0}, {100, 100}})})) }
 // Evaluating: getErrorString()
 // ""
 // Evaluating: addClassAnnotation(A.test, annotate = Icon(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}))
@@ -207,7 +212,10 @@ getDocumentationAnnotation(M);
 //   model test
 //     Integer x = 33;
 //     Real z;
-//     annotation(Icon(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}), Diagram(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}), Documentation(info = \"<HTML>foo</HTML>\", revisions = \"1.0\"));
+//     annotation(
+//       Icon(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}),
+//       Diagram(graphics = {Line(color = {127, 127, 127}, arrow = {Arrow.None, Arrow.Open}, points = {{-50, -50}, {50, 50}, {100, 0}, {0, 100}})}),
+//       Documentation(info = \"<HTML>foo</HTML>\", revisions = \"1.0\"));
 //   end test;
 // end A;"
 // Evaluating: getErrorString()
