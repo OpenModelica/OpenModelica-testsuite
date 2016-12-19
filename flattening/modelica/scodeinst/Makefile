@@ -56,6 +56,53 @@ usertype3.mo \
 usertype4.mo \
 usertype5.mo \
 usertype6.mo \
+ScalableTestSuite.Elementary.SimpleODE.Models.CascadedFirstOrder.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_200.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_100.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_3200.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_12800.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_400.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_1600.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_6400.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_200.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_800.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_25600.mos \
+ScalableTestSuite.Thermal.Advection.Verification.SimpleAdvection.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_3200.mos \
+ScalableTestSuite.Thermal.DistrictHeating.Verification.TestSat.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_400.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_10.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_6400.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_1280.mos \
+ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_800.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_160.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_1000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_20.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_2000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_320.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_4000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_40.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_8000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_640.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEventsManyConditions_N_1000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_80.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEventsManyConditions_N_2000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_10.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEventsManyConditions_N_4000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_1280.mos \
+ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEventsManyConditions_N_8000.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_160.mos \
+ScalableTestSuite.Elementary.WhenEvents.Verification.ManyEvents.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_20.mos \
+ScalableTestSuite.Elementary.WhenEvents.Verification.ManyEventsManyConditions.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_320.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_100.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_40.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_12800.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_640.mos \
+ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_1600.mos \
+ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTT_FD_N_80.mos
+
 
 # test that currently fail. Move up when fixed.
 # Run make testfailing

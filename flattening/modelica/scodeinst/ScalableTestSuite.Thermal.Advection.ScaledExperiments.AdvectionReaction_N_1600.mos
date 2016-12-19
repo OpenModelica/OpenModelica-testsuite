@@ -1,0 +1,16 @@
+// ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_1600.mos
+// keywords: new front-end with checkModel
+// status: correct
+// cflags: -d=newInst
+
+loadFile("ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_1600.mo"); getErrorString();
+checkModel(ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_1600);  getErrorString();
+
+// Result:
+// true
+// ""
+// "Check of ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_1600 completed successfully.
+// Class ScalableTestSuite.Thermal.Advection.ScaledExperiments.AdvectionReaction_N_1600 has 1601 equation(s) and 1601 variable(s).
+// 1601 of these are trivial equation(s)."
+// ""
+// endResult

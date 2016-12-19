@@ -1,0 +1,16 @@
+// ScalableTestSuite.Elementary.SimpleODE.Models.CascadedFirstOrder.mos
+// keywords: new front-end with checkModel
+// status: correct
+// cflags: -d=newInst
+
+loadFile("ScalableTestSuite.Elementary.SimpleODE.Models.CascadedFirstOrder.mo"); getErrorString();
+checkModel(ScalableTestSuite.Elementary.SimpleODE.Models.CascadedFirstOrder);  getErrorString();
+
+// Result:
+// true
+// ""
+// "Check of ScalableTestSuite.Elementary.SimpleODE.Models.CascadedFirstOrder completed successfully.
+// Class ScalableTestSuite.Elementary.SimpleODE.Models.CascadedFirstOrder has 10 equation(s) and 10 variable(s).
+// 10 of these are trivial equation(s)."
+// ""
+// endResult

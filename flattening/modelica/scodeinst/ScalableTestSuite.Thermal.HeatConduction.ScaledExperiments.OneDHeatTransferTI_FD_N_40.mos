@@ -1,0 +1,16 @@
+// ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_40.mos
+// keywords: new front-end with checkModel
+// status: correct
+// cflags: -d=newInst
+
+loadFile("ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_40.mo"); getErrorString();
+checkModel(ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_40);  getErrorString();
+
+// Result:
+// true
+// ""
+// "Check of ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_40 completed successfully.
+// Class ScalableTestSuite.Thermal.HeatConduction.ScaledExperiments.OneDHeatTransferTI_FD_N_40 has 40 equation(s) and 40 variable(s).
+// 39 of these are trivial equation(s)."
+// ""
+// endResult

@@ -1,0 +1,16 @@
+// ScalableTestSuite.Thermal.DistrictHeating.Verification.TestSat.mos
+// keywords: new front-end with checkModel
+// status: correct
+// cflags: -d=newInst
+
+loadFile("ScalableTestSuite.Thermal.DistrictHeating.Verification.TestSat.mo"); getErrorString();
+checkModel(ScalableTestSuite.Thermal.DistrictHeating.Verification.TestSat);  getErrorString();
+
+// Result:
+// true
+// ""
+// "Check of ScalableTestSuite.Thermal.DistrictHeating.Verification.TestSat completed successfully.
+// Class ScalableTestSuite.Thermal.DistrictHeating.Verification.TestSat has 2 equation(s) and 2 variable(s).
+// 1 of these are trivial equation(s)."
+// ""
+// endResult
