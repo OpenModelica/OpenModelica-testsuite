@@ -1,0 +1,16 @@
+// ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_25600.mos
+// keywords: new front-end with checkModel
+// status: correct
+// cflags: -d=newInst
+
+loadFile("ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_25600.mo"); getErrorString();
+checkModel(ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_25600);  getErrorString();
+
+// Result:
+// true
+// ""
+// "Check of ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_25600 completed successfully.
+// Class ScalableTestSuite.Elementary.SimpleODE.ScaledExperiments.CascadedFirstOrder_N_25600 has 25600 equation(s) and 25600 variable(s).
+// 25600 of these are trivial equation(s)."
+// ""
+// endResult

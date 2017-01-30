@@ -1,0 +1,16 @@
+// ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_1000.mos
+// keywords: new front-end with checkModel
+// status: correct
+// cflags: -d=newInst
+
+loadFile("ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_1000.mo"); getErrorString();
+checkModel(ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_1000);  getErrorString();
+
+// Result:
+// true
+// ""
+// "Check of ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_1000 completed successfully.
+// Class ScalableTestSuite.Elementary.WhenEvents.ScaledExperiments.ManyEvents_N_1000 has 2000 equation(s) and 2000 variable(s).
+// 1000 of these are trivial equation(s)."
+// ""
+// endResult

@@ -1,0 +1,16 @@
+// ScalableTestSuite.Elementary.WhenEvents.Verification.ManyEventsManyConditions.mos
+// keywords: new front-end with checkModel
+// status: correct
+// cflags: -d=newInst
+
+loadFile("ScalableTestSuite.Elementary.WhenEvents.Verification.ManyEventsManyConditions.mo"); getErrorString();
+checkModel(ScalableTestSuite.Elementary.WhenEvents.Verification.ManyEventsManyConditions);  getErrorString();
+
+// Result:
+// true
+// ""
+// "Check of ScalableTestSuite.Elementary.WhenEvents.Verification.ManyEventsManyConditions completed successfully.
+// Class ScalableTestSuite.Elementary.WhenEvents.Verification.ManyEventsManyConditions has 41 equation(s) and 41 variable(s).
+// 20 of these are trivial equation(s)."
+// ""
+// endResult
