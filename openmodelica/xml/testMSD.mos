@@ -288,7 +288,7 @@ readFile("stateSpace-MSD.xml");
 // </maxValue>
 // </attributesValues>
 // </variable>
-// <variable id=\"8\" name=\"damper1.stateSelect\" variability=\"parameter\" direction=\"none\" type=\"enumeration(never, avoid, default, prefer, always)\" fixed=\"true\" flow=\"NonConnector\" stream=\"NonStreamConnector\" comment=\"Priority to use phi_rel and w_rel as states\">
+// <variable id=\"8\" name=\"damper1.stateSelect\" variability=\"parameter\" direction=\"none\" type=\"enumeration(never, avoid, default, prefer, always)\" fixed=\"true\" flow=\"NonConnector\" stream=\"NonStreamConnector\" comment=\"Priority to use s_rel and v_rel as states\">
 // <bindValueExpression>
 // <bindExpression string=\"StateSelect.prefer\">
 // </bindExpression>
