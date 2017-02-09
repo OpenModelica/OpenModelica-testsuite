@@ -1,0 +1,18 @@
+// name: API-Interactive Calls
+// keywords: Graphical API, import FMU model description
+// status: correct
+//
+//  Subset of the Graphical API for importing FMU model description
+//
+
+
+importFMUModeldescription(modelDescription.xml);
+readFile("Modelica_Blocks_Math_Gain_Input_Output_FMU.mo");
+
+// Result:
+//
+// "model Modelica_Blocks_Math_Gain_me_FMU \"Output the product of a gain value with the input signal\"
+//   Modelica.Blocks.Interfaces.RealInput u  \"Input signal connector\" annotation(Placement(transformation(extent={{-120,60},{-100,80}})));
+//   Modelica.Blocks.Interfaces.RealOutput y  \"Output signal connector\" annotation(Placement(transformation(extent={{100,60},{120,80}})));
+// end Modelica_Blocks_Math_Gain_me_FMU;"
+// endResult
