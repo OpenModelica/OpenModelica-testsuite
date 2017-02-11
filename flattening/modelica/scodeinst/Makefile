@@ -13,6 +13,8 @@ builtinmod.mo \
 builtinmod2.mo \
 BuiltinTime.mo \
 ClassAsComponentError.mo \
+classextends1.mo \
+classextends2.mo \
 ComponentAsTypeError.mo \
 cond4.mo \
 conn1.mo \
@@ -164,8 +166,6 @@ type1.mo \
 type3.mo \
 type4.mo \
 type5.mo \
-classextends1.mo \
-classextends2.mo \
 classextends3.mo \
 inst1.mo \
 inst2.mo \
