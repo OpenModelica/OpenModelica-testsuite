@@ -2958,7 +2958,7 @@ end BoreholeSegment;
 // algorithm
 //   k := 2.0 / (3.141592653589793 * mueMed * rTub);
 //   h := 0.0115 * kMed * (cpMed * mueMed / kMed) ^ 0.35 * Buildings.Utilities.Math.Functions.regNonZeroPower(m_flow * k, 0.8, 0.01 * m_flow_nominal * k) / rTub;
-//   R := 0.1591549430918953 / (h * hSeg * rTub);
+//   R := 0.1591549430918954 / (h * hSeg * rTub);
 // end Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.convectionResistance;
 //
 // function Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.exchangeValues
@@ -2986,7 +2986,7 @@ end BoreholeSegment;
 //   input Integer N;
 //   output Real W;
 // algorithm
-//   W := -0.5772 + sum(-1.0 ^ /*Real*/(1 + j) * u ^ /*Real*/(j) / /*Real*/(j * Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.factorial(j)) for j in 1:N) - log(u);
+//   W := -0.5772000000000001 + sum(-1.0 ^ /*Real*/(1 + j) * u ^ /*Real*/(j) / /*Real*/(j * Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.factorial(j)) for j in 1:N) - log(u);
 // end Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.powerSeries;
 //
 // function Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.singleUTubeResistances
@@ -3015,9 +3015,9 @@ end BoreholeSegment;
 //   protected Real Ra_LS;
 //   protected Integer i = 1;
 // algorithm
-//   RCondPipe := 0.1591549430918953 * log((rTub + eTub) / rTub) / (kTub * hSeg);
+//   RCondPipe := 0.1591549430918954 * log((rTub + eTub) / rTub) / (kTub * hSeg);
 //   sigma := (kFil - kSoi) / (kFil + kSoi);
-//   R_1delta_LS := 0.1591549430918953 * (log(rBor / (rTub + eTub)) + log(0.5 * rBor / xC) + sigma * log(rBor ^ 4.0 / (rBor ^ 4.0 - xC ^ 4.0))) / kFil;
+//   R_1delta_LS := 0.1591549430918954 * (log(rBor / (rTub + eTub)) + log(0.5 * rBor / xC) + sigma * log(rBor ^ 4.0 / (rBor ^ 4.0 - xC ^ 4.0))) / kFil;
 //   R_1delta_MP := R_1delta_LS + -0.03978873577297384 * ((rTub + eTub) * (1.0 + -4.0 * sigma * xC ^ 4.0 / (rBor ^ 4.0 - xC ^ 4.0)) / xC) ^ 2.0 / (kFil * ((1.0 + beta) / (1.0 - beta) + 0.25 * ((rTub + eTub) / xC) ^ 2.0 * (1.0 + 16.0 * sigma * (xC * rBor) ^ 4.0 / (rBor ^ 4.0 - xC ^ 4.0) ^ 2.0)));
 //   Ra_LS := 0.3183098861837907 * (log(2.0 * xC / rTub) + sigma * log((rBor ^ 2.0 + xC ^ 2.0) / (rBor ^ 2.0 - xC ^ 2.0))) / kFil;
 //   beta := 6.283185307179586 * kFil * RCondPipe;
@@ -3658,7 +3658,7 @@ end BoreholeSegment;
 //               is negative. It must be positive.
 //               ");
 //   end for;
-//   if nX > 0 and abs(-1.0 + sum(X_boundary)) > 1e-10 then
+//   if nX > 0 and abs(-1.0 + sum(X_boundary)) > 1e-010 then
 //     X_str := "";
 //     for i in 1:nX loop
 //       X_str := X_str + "   X_boundary[" + String(i, 0, true) + "] = " + String(X_boundary[i], 0, true, 6) + " \"" + substanceNames[i] + "\"
@@ -3925,16 +3925,16 @@ end BoreholeSegment;
 //   parameter Real seg.h_outflow_b1_start(quantity = "SpecificEnergy", unit = "J/kg") = 83680.0;
 //   parameter Real seg.h_outflow_a2_start(quantity = "SpecificEnergy", unit = "J/kg") = 83680.0;
 //   parameter Real seg.h_outflow_b2_start(quantity = "SpecificEnergy", unit = "J/kg") = 83680.0;
-//   Real seg.port_a1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.allowFlowReversal1 then -9.999999999999999e+59 else 0.0, max = 100000.0);
+//   Real seg.port_a1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.allowFlowReversal1 then -1e+060 else 0.0, max = 100000.0);
 //   Real seg.port_a1.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.port_a1.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.h_outflow_a1_start, nominal = 100000.0);
-//   Real seg.port_b1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.allowFlowReversal1 then 9.999999999999999e+59 else 0.0);
+//   Real seg.port_b1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.allowFlowReversal1 then 1e+060 else 0.0);
 //   Real seg.port_b1.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.port_b1.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.h_outflow_b1_start, nominal = 100000.0);
-//   Real seg.port_a2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.allowFlowReversal2 then -9.999999999999999e+59 else 0.0, max = 100000.0);
+//   Real seg.port_a2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.allowFlowReversal2 then -1e+060 else 0.0, max = 100000.0);
 //   Real seg.port_a2.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.port_a2.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.h_outflow_a2_start, nominal = 100000.0);
-//   Real seg.port_b2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.allowFlowReversal2 then 9.999999999999999e+59 else 0.0);
+//   Real seg.port_b2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.allowFlowReversal2 then 1e+060 else 0.0);
 //   Real seg.port_b2.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.port_b2.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.h_outflow_b2_start, nominal = 100000.0);
 //   parameter Real seg.m1_flow_nominal(quantity = "MassFlowRate", unit = "kg/s", min = 0.0) = seg.m_flow_nominal;
@@ -3995,16 +3995,16 @@ end BoreholeSegment;
 //   parameter Real seg.pipFil.h_outflow_b1_start(quantity = "SpecificEnergy", unit = "J/kg") = seg.pipFil.h1_outflow_start;
 //   parameter Real seg.pipFil.h_outflow_a2_start(quantity = "SpecificEnergy", unit = "J/kg") = seg.pipFil.h2_outflow_start;
 //   parameter Real seg.pipFil.h_outflow_b2_start(quantity = "SpecificEnergy", unit = "J/kg") = seg.pipFil.h2_outflow_start;
-//   Real seg.pipFil.port_a1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.allowFlowReversal1 then -9.999999999999999e+59 else 0.0, max = 100000.0);
+//   Real seg.pipFil.port_a1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.allowFlowReversal1 then -1e+060 else 0.0, max = 100000.0);
 //   Real seg.pipFil.port_a1.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.pipFil.port_a1.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.pipFil.h_outflow_a1_start, nominal = 100000.0);
-//   Real seg.pipFil.port_b1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.allowFlowReversal1 then 9.999999999999999e+59 else 0.0);
+//   Real seg.pipFil.port_b1.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.allowFlowReversal1 then 1e+060 else 0.0);
 //   Real seg.pipFil.port_b1.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.pipFil.port_b1.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.pipFil.h_outflow_b1_start, nominal = 100000.0);
-//   Real seg.pipFil.port_a2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.allowFlowReversal2 then -9.999999999999999e+59 else 0.0, max = 100000.0);
+//   Real seg.pipFil.port_a2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.allowFlowReversal2 then -1e+060 else 0.0, max = 100000.0);
 //   Real seg.pipFil.port_a2.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.pipFil.port_a2.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.pipFil.h_outflow_a2_start, nominal = 100000.0);
-//   Real seg.pipFil.port_b2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.allowFlowReversal2 then 9.999999999999999e+59 else 0.0);
+//   Real seg.pipFil.port_b2.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.allowFlowReversal2 then 1e+060 else 0.0);
 //   Real seg.pipFil.port_b2.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real seg.pipFil.port_b2.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, start = seg.pipFil.h_outflow_b2_start, nominal = 100000.0);
 //   parameter Real seg.pipFil.m1_flow_nominal(quantity = "MassFlowRate", unit = "kg/s", min = 0.0) = seg.m_flow_nominal;
@@ -4200,10 +4200,10 @@ end BoreholeSegment;
 //   Real seg.pipFil.Q1_flow(quantity = "Power", unit = "W") = seg.pipFil.vol1.heatPort.Q_flow;
 //   Real seg.pipFil.Q2_flow(quantity = "Power", unit = "W") = seg.pipFil.vol2.heatPort.Q_flow;
 //   parameter Boolean seg.pipFil.preDro1.allowFlowReversal = seg.pipFil.allowFlowReversal1;
-//   Real seg.pipFil.preDro1.port_a.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.preDro1.allowFlowReversal then -9.999999999999999e+59 else 0.0, max = 100000.0);
+//   Real seg.pipFil.preDro1.port_a.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.preDro1.allowFlowReversal then -1e+060 else 0.0, max = 100000.0);
 //   Real seg.pipFil.preDro1.port_a.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 300000.0, nominal = 300000.0);
 //   Real seg.pipFil.preDro1.port_a.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, nominal = 1000000.0);
-//   Real seg.pipFil.preDro1.port_b.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.preDro1.allowFlowReversal then 9.999999999999999e+59 else 0.0);
+//   Real seg.pipFil.preDro1.port_b.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.preDro1.allowFlowReversal then 1e+060 else 0.0);
 //   Real seg.pipFil.preDro1.port_b.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 300000.0, nominal = 300000.0);
 //   Real seg.pipFil.preDro1.port_b.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, nominal = 1000000.0);
 //   protected parameter Boolean seg.pipFil.preDro1.port_a_exposesState = false;
@@ -4229,12 +4229,12 @@ end BoreholeSegment;
 //   parameter Real seg.pipFil.preDro1.ReC(min = 0.0) = 4000.0;
 //   parameter Real seg.pipFil.preDro1.deltaM(min = 0.01) = seg.pipFil.deltaM1;
 //   final parameter Real seg.pipFil.preDro1.k(unit = "") = if seg.pipFil.preDro1.computeFlowResistance then seg.pipFil.preDro1.m_flow_nominal_pos / sqrt(seg.pipFil.preDro1.dp_nominal_pos) else 0.0;
-//   protected final parameter Boolean seg.pipFil.preDro1.computeFlowResistance = seg.pipFil.preDro1.dp_nominal_pos > 1e-15;
+//   protected final parameter Boolean seg.pipFil.preDro1.computeFlowResistance = seg.pipFil.preDro1.dp_nominal_pos > 1e-015;
 //   parameter Boolean seg.pipFil.preDro2.allowFlowReversal = seg.pipFil.allowFlowReversal2;
-//   Real seg.pipFil.preDro2.port_a.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.preDro2.allowFlowReversal then -9.999999999999999e+59 else 0.0, max = 100000.0);
+//   Real seg.pipFil.preDro2.port_a.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if seg.pipFil.preDro2.allowFlowReversal then -1e+060 else 0.0, max = 100000.0);
 //   Real seg.pipFil.preDro2.port_a.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 300000.0, nominal = 300000.0);
 //   Real seg.pipFil.preDro2.port_a.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, nominal = 1000000.0);
-//   Real seg.pipFil.preDro2.port_b.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.preDro2.allowFlowReversal then 9.999999999999999e+59 else 0.0);
+//   Real seg.pipFil.preDro2.port_b.m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = -100000.0, max = if seg.pipFil.preDro2.allowFlowReversal then 1e+060 else 0.0);
 //   Real seg.pipFil.preDro2.port_b.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 300000.0, nominal = 300000.0);
 //   Real seg.pipFil.preDro2.port_b.h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, nominal = 1000000.0);
 //   protected parameter Boolean seg.pipFil.preDro2.port_a_exposesState = false;
@@ -4260,7 +4260,7 @@ end BoreholeSegment;
 //   parameter Real seg.pipFil.preDro2.ReC(min = 0.0) = 4000.0;
 //   parameter Real seg.pipFil.preDro2.deltaM(min = 0.01) = seg.pipFil.deltaM2;
 //   final parameter Real seg.pipFil.preDro2.k(unit = "") = if seg.pipFil.preDro2.computeFlowResistance then seg.pipFil.preDro2.m_flow_nominal_pos / sqrt(seg.pipFil.preDro2.dp_nominal_pos) else 0.0;
-//   protected final parameter Boolean seg.pipFil.preDro2.computeFlowResistance = seg.pipFil.preDro2.dp_nominal_pos > 1e-15;
+//   protected final parameter Boolean seg.pipFil.preDro2.computeFlowResistance = seg.pipFil.preDro2.dp_nominal_pos > 1e-015;
 //   protected parameter Real seg.pipFil.sta1_nominal.p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 300000.0, nominal = 100000.0) = 300000.0;
 //   protected parameter Real seg.pipFil.sta1_nominal.T(quantity = "ThermodynamicTemperature", unit = "K", displayUnit = "degC", min = 1.0, max = 10000.0, start = 293.15, nominal = 300.0) = 293.15;
 //   protected parameter Real seg.pipFil.rho1_nominal(quantity = "Density", unit = "kg/m3", displayUnit = "g/cm3", min = 0.0) = Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.HexInternalElement$seg$pipFil.Medium1.density(seg.pipFil.sta1_nominal);
@@ -4480,7 +4480,7 @@ end BoreholeSegment;
 //   parameter Boolean sou_1.medium.standardOrderComponents = true;
 //   Real sou_1.medium.T_degC(quantity = "ThermodynamicTemperature", unit = "degC") = Modelica.SIunits.Conversions.to_degC(sou_1.medium.T);
 //   Real sou_1.medium.p_bar(quantity = "Pressure", unit = "bar") = Modelica.SIunits.Conversions.to_bar(sou_1.medium.p);
-//   Real sou_1.ports[1].m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if sou_1.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Entering then 0.0 else -9.999999999999999e+59, max = if sou_1.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Leaving then 0.0 else 9.999999999999999e+59);
+//   Real sou_1.ports[1].m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if sou_1.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Entering then 0.0 else -1e+060, max = if sou_1.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Leaving then 0.0 else 1e+060);
 //   Real sou_1.ports[1].p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real sou_1.ports[1].h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, nominal = 1000000.0);
 //   protected parameter enumeration(Entering, Leaving, Bidirectional) sou_1.flowDirection = Modelica.Fluid.Types.PortFlowDirection.Bidirectional;
@@ -4509,7 +4509,7 @@ end BoreholeSegment;
 //   parameter Boolean sin_2.medium.standardOrderComponents = true;
 //   Real sin_2.medium.T_degC(quantity = "ThermodynamicTemperature", unit = "degC") = Modelica.SIunits.Conversions.to_degC(sin_2.medium.T);
 //   Real sin_2.medium.p_bar(quantity = "Pressure", unit = "bar") = Modelica.SIunits.Conversions.to_bar(sin_2.medium.p);
-//   Real sin_2.ports[1].m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if sin_2.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Entering then 0.0 else -9.999999999999999e+59, max = if sin_2.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Leaving then 0.0 else 9.999999999999999e+59);
+//   Real sin_2.ports[1].m_flow(quantity = "MassFlowRate.SimpleLiquidWater", unit = "kg/s", min = if sin_2.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Entering then 0.0 else -1e+060, max = if sin_2.flowDirection == Modelica.Fluid.Types.PortFlowDirection.Leaving then 0.0 else 1e+060);
 //   Real sin_2.ports[1].p(quantity = "Pressure", unit = "Pa", displayUnit = "bar", min = 0.0, max = 100000000.0, start = 100000.0, nominal = 100000.0);
 //   Real sin_2.ports[1].h_outflow(quantity = "SpecificEnergy", unit = "J/kg", min = -10000000000.0, max = 10000000000.0, nominal = 1000000.0);
 //   protected parameter enumeration(Entering, Leaving, Bidirectional) sin_2.flowDirection = Modelica.Fluid.Types.PortFlowDirection.Bidirectional;
@@ -4524,9 +4524,18 @@ end BoreholeSegment;
 //   protected Real sin_2.T_in_internal;
 //   protected Real sin_2.X_in_internal[1];
 // initial equation
+//   assert(true, "If Medium.nXi > 1, then substance 'water' must be present for one component.'SimpleLiquidWater'.
+//   Check medium model.");
 //   der(seg.pipFil.vol1.dynBal.medium.T) = 0.0;
+//   assert(true, "If Medium.nXi > 1, then substance 'water' must be present for one component.'SimpleLiquidWater'.
+//   Check medium model.");
 //   der(seg.pipFil.vol2.dynBal.medium.T) = 0.0;
+//   assert(seg.pipFil.preDro1.m_flow_turbulent > 0.0, "m_flow_turbulent must be bigger than zero.");
+//   assert(seg.pipFil.preDro1.m_flow_nominal_pos > 0.0, "m_flow_nominal_pos must be non-zero. Check parameters.");
+//   assert(seg.pipFil.preDro2.m_flow_nominal_pos > 0.0, "m_flow_nominal_pos must be non-zero. Check parameters.");
 //   (seg.pipFil.Rgb_val, seg.pipFil.Rgg_val, seg.pipFil.RCondGro_val, seg.pipFil.x) = Buildings.Fluid.HeatExchangers.Boreholes.BaseClasses.singleUTubeResistances(seg.pipFil.hSeg, seg.pipFil.rBor, seg.pipFil.rTub, seg.pipFil.eTub, seg.pipFil.xC, seg.pipFil.matSoi.k, seg.pipFil.matFil.k, seg.pipFil.kTub);
+//   assert(seg.soi.r_a < seg.soi.r_b, "Error: Model requires r_a < r_b.");
+//   assert(0.0 < seg.soi.r_a, "Error: Model requires 0 < r_a.");
 //   seg.soi.r[1] = seg.soi.r_a;
 //   seg.soi.r[2] = seg.soi.r[1] + (seg.soi.r_b - seg.soi.r_a) * (1.0 - seg.soi.griFac) / (1.0 - seg.soi.griFac ^ /*Real*/(seg.soi.nSta));
 //   seg.soi.r[3] = seg.soi.r[2] + (seg.soi.r_b - seg.soi.r_a) * (1.0 - seg.soi.griFac) * seg.soi.griFac / (1.0 - seg.soi.griFac ^ /*Real*/(seg.soi.nSta));
@@ -4537,6 +4546,7 @@ end BoreholeSegment;
 //   seg.soi.r[8] = seg.soi.r[7] + (seg.soi.r_b - seg.soi.r_a) * (1.0 - seg.soi.griFac) * seg.soi.griFac ^ 6.0 / (1.0 - seg.soi.griFac ^ /*Real*/(seg.soi.nSta));
 //   seg.soi.r[9] = seg.soi.r[8] + (seg.soi.r_b - seg.soi.r_a) * (1.0 - seg.soi.griFac) * seg.soi.griFac ^ 7.0 / (1.0 - seg.soi.griFac ^ /*Real*/(seg.soi.nSta));
 //   seg.soi.r[10] = seg.soi.r[9] + (seg.soi.r_b - seg.soi.r_a) * (1.0 - seg.soi.griFac) * seg.soi.griFac ^ 8.0 / (1.0 - seg.soi.griFac ^ /*Real*/(seg.soi.nSta));
+//   assert(abs(seg.soi.r[10] - seg.soi.r_b) < 1e-010, "Error: Wrong computation of radius. r[nSta+1]=" + String(seg.soi.r[10], 0, true, 6));
 //   seg.soi.rC[1] = 0.5 * (seg.soi.r[1] + seg.soi.r[2]);
 //   seg.soi.rC[2] = 0.5 * (seg.soi.r[2] + seg.soi.r[3]);
 //   seg.soi.rC[3] = 0.5 * (seg.soi.r[3] + seg.soi.r[4]);
@@ -4575,19 +4585,19 @@ end BoreholeSegment;
 //   seg.soi.T[8] = seg.soi.TInt_start + (seg.soi.TExt_start - seg.soi.TInt_start) * log(seg.soi.rC[8] / seg.soi.r_a) / log(seg.soi.r_b / seg.soi.r_a);
 //   seg.soi.T[9] = seg.soi.TInt_start + (seg.soi.TExt_start - seg.soi.TInt_start) * log(seg.soi.rC[9] / seg.soi.r_a) / log(seg.soi.r_b / seg.soi.r_a);
 // initial algorithm
-//   assert(seg.pipFil.energyDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau1 > 1e-15, "The parameter tau1, or the volume of the model from which tau may be derived, is unreasonably small.
+//   assert(seg.pipFil.energyDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau1 > 1e-015, "The parameter tau1, or the volume of the model from which tau may be derived, is unreasonably small.
 //            You need to set energyDynamics == Modelica.Fluid.Types.Dynamics.SteadyState to model steady-state.
 //            Received tau1 = " + String(seg.pipFil.tau1, 0, true, 6) + "
 //   ");
-//   assert(seg.pipFil.massDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau1 > 1e-15, "The parameter tau1, or the volume of the model from which tau may be derived, is unreasonably small.
+//   assert(seg.pipFil.massDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau1 > 1e-015, "The parameter tau1, or the volume of the model from which tau may be derived, is unreasonably small.
 //            You need to set massDynamics == Modelica.Fluid.Types.Dynamics.SteadyState to model steady-state.
 //            Received tau1 = " + String(seg.pipFil.tau1, 0, true, 6) + "
 //   ");
-//   assert(seg.pipFil.energyDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau2 > 1e-15, "The parameter tau2, or the volume of the model from which tau may be derived, is unreasonably small.
+//   assert(seg.pipFil.energyDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau2 > 1e-015, "The parameter tau2, or the volume of the model from which tau may be derived, is unreasonably small.
 //            You need to set energyDynamics == Modelica.Fluid.Types.Dynamics.SteadyState to model steady-state.
 //            Received tau2 = " + String(seg.pipFil.tau2, 0, true, 6) + "
 //   ");
-//   assert(seg.pipFil.massDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau2 > 1e-15, "The parameter tau2, or the volume of the model from which tau may be derived, is unreasonably small.
+//   assert(seg.pipFil.massDynamics == Modelica.Fluid.Types.Dynamics.SteadyState or seg.pipFil.tau2 > 1e-015, "The parameter tau2, or the volume of the model from which tau may be derived, is unreasonably small.
 //            You need to set massDynamics == Modelica.Fluid.Types.Dynamics.SteadyState to model steady-state.
 //            Received tau2 = " + String(seg.pipFil.tau2, 0, true, 6) + "
 //   ");
@@ -4678,14 +4688,11 @@ end BoreholeSegment;
 //   seg.pipFil.preDro1.port_b.h_outflow = sou_1.ports[1].h_outflow;
 //   seg.pipFil.preDro1.port_a.m_flow + seg.pipFil.preDro1.port_b.m_flow = 0.0;
 //   seg.pipFil.preDro1.dp = seg.pipFil.preDro1.port_a.p - seg.pipFil.preDro1.port_b.p;
-//   assert(seg.pipFil.preDro1.m_flow_turbulent > 0.0, "m_flow_turbulent must be bigger than zero.");
-//   assert(seg.pipFil.preDro1.m_flow_nominal_pos > 0.0, "m_flow_nominal_pos must be non-zero. Check parameters.");
 //   seg.pipFil.preDro2.dp = 0.0;
 //   seg.pipFil.preDro2.port_a.h_outflow = seg.pipFil.vol2.ports[1].h_outflow;
 //   seg.pipFil.preDro2.port_b.h_outflow = seg.port_b1.h_outflow;
 //   seg.pipFil.preDro2.port_a.m_flow + seg.pipFil.preDro2.port_b.m_flow = 0.0;
 //   seg.pipFil.preDro2.dp = seg.pipFil.preDro2.port_a.p - seg.pipFil.preDro2.port_b.p;
-//   assert(seg.pipFil.preDro2.m_flow_nominal_pos > 0.0, "m_flow_nominal_pos must be non-zero. Check parameters.");
 //   seg.pipFil.capFil1.T = seg.pipFil.capFil1.port.T;
 //   seg.pipFil.capFil1.der_T = der(seg.pipFil.capFil1.T);
 //   seg.pipFil.capFil1.C * der(seg.pipFil.capFil1.T) = seg.pipFil.capFil1.port.Q_flow;
@@ -4744,9 +4751,6 @@ end BoreholeSegment;
 //   der(seg.soi.T[7]) = (seg.soi.Q_flow[7] - seg.soi.Q_flow[8]) / seg.soi.C[7];
 //   der(seg.soi.T[8]) = (seg.soi.Q_flow[8] - seg.soi.Q_flow[9]) / seg.soi.C[8];
 //   der(seg.soi.T[9]) = (seg.soi.Q_flow[9] - seg.soi.Q_flow[10]) / seg.soi.C[9];
-//   assert(seg.soi.r_a < seg.soi.r_b, "Error: Model requires r_a < r_b.");
-//   assert(0.0 < seg.soi.r_a, "Error: Model requires 0 < r_a.");
-//   assert(abs(seg.soi.r[10] - seg.soi.r_b) < 1e-10, "Error: Wrong computation of radius. r[nSta+1]=" + String(seg.soi.r[10], 0, true, 6));
 //   der(seg.TBouCon.U) = seg.TBouCon.Q_flow;
 //   seg.heaFlo.port_a.T = seg.heaFlo.port_b.T;
 //   seg.heaFlo.port_a.Q_flow + seg.heaFlo.port_b.Q_flow = 0.0;
