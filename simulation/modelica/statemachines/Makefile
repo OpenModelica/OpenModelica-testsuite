@@ -10,6 +10,7 @@ MLS33_17_3_7NA.mos \
 DeadEnd.mos \
 ticket4271.mos \
 EnteringByReset.mos \
+ConferenceTut1DeadEnd.mos \
 
 # test that currently fail. Move up when fixed.
 # Run make failingtest

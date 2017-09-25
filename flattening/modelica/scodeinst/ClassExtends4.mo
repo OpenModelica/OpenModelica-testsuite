@@ -1,7 +1,7 @@
-// name: classextends3.mo
+// name: ClassExtends4
 // keywords:
 // status: correct
-// cflags:   -d=newInst
+// cflags: -d=newInst
 //
 
 package PartialMedium
@@ -32,23 +32,22 @@ package SingleGasNasa
   end specificEnthalpy;
 end SingleGasNasa;
 
-model M
+model ClassExtends4
   SingleGasNasa.ThermodynamicState state(p = 1, T = 2);
   Real x = SingleGasNasa.specificEnthalpy(state);
-end M;
+end ClassExtends4;
 
 // Result:
 // function SingleGasNasa.specificEnthalpy
-//   input Real state.p;
-//   input Real state.T;
+//   input ThermodynamicState state;
 //   output Real h;
 // algorithm
 //   h := state.T;
 // end SingleGasNasa.specificEnthalpy;
 //
-// class M
+// class ClassExtends4
 //   Real state.p = 1.0;
 //   Real state.T = 2.0;
 //   Real x = SingleGasNasa.specificEnthalpy(state);
-// end M;
+// end ClassExtends4;
 // endResult
