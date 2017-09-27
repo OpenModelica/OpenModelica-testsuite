@@ -1,32 +1,47 @@
-// name:  testModelDescription
-// keywords: FMI 2.0 export clocks
+// name:  testClockDescription
+// keywords: FMI 2.0 export multiple clocks and sub-clocks
 // status: correct
-// teardown_command: rm -rf binaries sources modelDescription.xml modelDescription.tmp.xml *SIDTest* output.log
+// teardown_command: rm -rf binaries sources modelDescription.xml modelDescription.tmp.xml *SubClocks* output.log
 //
 
 setCommandLineOptions("+simCodeTarget=Cpp"); getErrorString();
 loadString("
-model SIDTest
-  parameter Real dt = 0.1 annotation(Evaluate = true);
-  parameter Real p = 1;
-  parameter Real y_start = 0;
-  Real xd(start = y_start);
-  input Real u(start = -2);
-  output Real y;
+model SubClocks
+  Real x1(start = 0);
+  Real x2(start = 0);
+  Real x3(start = 0);
+  Real x4(start = 0);
+  Real x5(start = 0);
+  Clock c1 = subSample(Clock(1, 2), 2);
+  Clock c2 = shiftSample(c1, 1, 2);
+  Clock c3 = subSample(c2, 3);
+  Clock c4 = superSample(c3, 2);
+  Clock c5 = superSample(shiftSample(Clock(1.0), 1, 2), 2);
 equation
-  when shiftSample(subSample(Clock(dt), 2), 3) then
-    xd = previous(xd) + p * u * interval(u);
-    y = previous(xd);
+  when c1 then
+    x1 = sample(time);
   end when;
-end SIDTest;
+  when c2 then
+    x2 = sample(time);
+  end when;
+  when c3 then
+    x3 = sample(time);
+  end when;
+  when c4 then
+    x4 = sample(time);
+  end when;
+  when c5 then
+    x5 = sample(time);
+  end when;
+end SubClocks;
 ");
 getErrorString();
 
-translateModelFMU(SIDTest, version="2.0");
+translateModelFMU(SubClocks, version="2.0");
 getErrorString();
 
 // unzip to console, quiet, extra quiet
-system("unzip -cqq SIDTest.fmu modelDescription.xml | grep -v guid | grep -v generationDateAndTime | grep -v generationTool > modelDescription.tmp.xml");
+system("unzip -cqq SubClocks.fmu modelDescription.xml | grep -v guid | grep -v generationDateAndTime | grep -v generationTool > modelDescription.tmp.xml");
 readFile("modelDescription.tmp.xml");
 
 // Result:
@@ -34,24 +49,43 @@ readFile("modelDescription.tmp.xml");
 // ""
 // true
 // ""
-// "SIDTest.fmu"
+// "SubClocks.fmu"
 // ""
 // 0
 // "<?xml version=\"1.0\" encoding=\"UTF-8\"?>
 // <fmiModelDescription
 //   fmiVersion=\"2.0\"
-//   modelName=\"SIDTest\"
+//   modelName=\"SubClocks\"
 //   description=\"\"
 //   variableNamingConvention=\"structured\"
 //   numberOfEventIndicators=\"0\">
 //   <ModelExchange
-//     modelIdentifier=\"SIDTest\">
+//     modelIdentifier=\"SubClocks\">
 //   </ModelExchange>
 //   <TypeDefinitions>
 //     <Clocks>
 //       <Clock><Periodic
-//               interval=\"0.2\"
-//               shiftCounter=\"3\"
+//               intervalCounter=\"9\"
+//               shiftCounter=\"2\"
+//               resolution=\"6\"
+//               /></Clock>
+//       <Clock><Periodic
+//               intervalCounter=\"36\"
+//               shiftCounter=\"2\"
+//               resolution=\"12\"
+//               /></Clock>
+//       <Clock><Periodic
+//               intervalCounter=\"4\"
+//               shiftCounter=\"2\"
+//               resolution=\"4\"
+//               /></Clock>
+//       <Clock><Periodic
+//               intervalCounter=\"2\"
+//               resolution=\"2\"
+//               /></Clock>
+//       <Clock><Periodic
+//               interval=\"0.5\"
+//               shiftCounter=\"1\"
 //               /></Clock>
 //     </Clocks>
 //   </TypeDefinitions>
@@ -72,79 +106,56 @@ readFile("modelDescription.tmp.xml");
 //   <ModelVariables>
 //   <!-- Index of variable = \"1\" -->
 //   <ScalarVariable
-//     name=\"previous(xd)\"
+//     name=\"x1\"
 //     valueReference=\"0\"
 //     variability=\"discrete\"
 //     causality=\"local\"
-//     clockIndex=\"1\"
+//     clockIndex=\"4\"
 //     initial=\"exact\">
 //     <Real start=\"0.0\"/>
 //   </ScalarVariable>
 //   <!-- Index of variable = \"2\" -->
 //   <ScalarVariable
-//     name=\"u\"
+//     name=\"x2\"
 //     valueReference=\"1\"
-//     variability=\"continuous\"
-//     causality=\"input\"
-//     >
-//     <Real start=\"-2.0\"/>
+//     variability=\"discrete\"
+//     causality=\"local\"
+//     clockIndex=\"3\"
+//     initial=\"exact\">
+//     <Real start=\"0.0\"/>
 //   </ScalarVariable>
 //   <!-- Index of variable = \"3\" -->
 //   <ScalarVariable
-//     name=\"xd\"
+//     name=\"x3\"
 //     valueReference=\"2\"
 //     variability=\"discrete\"
 //     causality=\"local\"
-//     clockIndex=\"1\"
-//     previous=\"1\"
+//     clockIndex=\"2\"
 //     initial=\"exact\">
 //     <Real start=\"0.0\"/>
 //   </ScalarVariable>
 //   <!-- Index of variable = \"4\" -->
 //   <ScalarVariable
-//     name=\"y\"
+//     name=\"x4\"
 //     valueReference=\"3\"
 //     variability=\"discrete\"
-//     causality=\"output\"
+//     causality=\"local\"
 //     clockIndex=\"1\"
-//     initial=\"calculated\">
-//     <Real/>
+//     initial=\"exact\">
+//     <Real start=\"0.0\"/>
 //   </ScalarVariable>
 //   <!-- Index of variable = \"5\" -->
 //   <ScalarVariable
-//     name=\"dt\"
+//     name=\"x5\"
 //     valueReference=\"4\"
-//     variability=\"fixed\"
-//     causality=\"calculatedParameter\"
-//     initial=\"calculated\">
-//     <Real/>
-//   </ScalarVariable>
-//   <!-- Index of variable = \"6\" -->
-//   <ScalarVariable
-//     name=\"p\"
-//     valueReference=\"5\"
-//     variability=\"fixed\"
-//     causality=\"parameter\"
-//     initial=\"exact\">
-//     <Real start=\"1.0\"/>
-//   </ScalarVariable>
-//   <!-- Index of variable = \"7\" -->
-//   <ScalarVariable
-//     name=\"y_start\"
-//     valueReference=\"6\"
-//     variability=\"fixed\"
-//     causality=\"parameter\"
+//     variability=\"discrete\"
+//     causality=\"local\"
+//     clockIndex=\"5\"
 //     initial=\"exact\">
 //     <Real start=\"0.0\"/>
 //   </ScalarVariable>
 //   </ModelVariables>
 //   <ModelStructure>
-//     <Outputs>
-//       <Unknown index=\"4\" dependencies=\"\" dependenciesKind=\"\" />
-//     </Outputs>
-//     <DiscreteStates>
-//       <Unknown index=\"3\" dependencies=\"\" dependenciesKind=\"\" />
-//     </DiscreteStates>
 //   </ModelStructure>
 // </fmiModelDescription>
 // "
