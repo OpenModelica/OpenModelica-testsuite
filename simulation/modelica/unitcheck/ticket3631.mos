@@ -26,11 +26,9 @@ translateModel(unitCheckTests.ticket3631); getErrorString();
 // {y,{MASTER(y)}}
 // {x,{MASTER(x)}}
 // HashTable:
-// {y,{1.0 * s^(1)}}
-// {x,{1.0 * s^(1)}}
+// {y,{MASTER(y)}}
+// {x,{MASTER(x)}}
 // ######## UnitCheck COMPLETED ########
 // true
-// "Notification: "y" has the Unit "s"
-// "x" has the Unit "s"
-// "
+// ""
 // endResult

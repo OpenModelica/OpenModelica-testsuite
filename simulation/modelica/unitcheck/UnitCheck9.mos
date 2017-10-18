@@ -30,18 +30,12 @@ translateModel(unitCheckTests.UnitCheck9); getErrorString();
 // #####################################
 // HashTable:
 // {E,{MASTER(E)}}
-// {C,{MASTER(C)}}
 // {S,{1.0 * m^(1) * s^(-1)}}
-// {A,{MASTER(A)}}
 // {V,{1.0 * m^(2) * s^(-2)}}
-// HashTable:
-// {E,{MASTER(E)}}
-// {C,{MASTER(C)}}
-// {S,{1.0 * m^(1) * s^(-1)}}
-// {A,{1.0 * m^(1) * s^(-1)}}
-// {V,{1.0 * m^(2) * s^(-2)}}
-// ######## UnitCheck COMPLETED ########
 // true
-// "Notification: "A" has the Unit "m/s"
+// "Warning: The following equation is INCONSISTENT due to specified unit information: V = E * C - S * A
+// The units of following sub-expressions need to be equal:
+// - sub-expression "E * C - S * A" has unit "m3.s-3"
+// - sub-expression "V" has unit "m2/s2"
 // "
 // endResult

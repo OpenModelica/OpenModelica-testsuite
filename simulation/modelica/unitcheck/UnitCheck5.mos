@@ -16,7 +16,7 @@ package unitCheckTests
 end unitCheckTests;
 "); getErrorString();
 
-setCommandLineOptions("--preOptModules+=unitChecking +d=dumpUnits"); getErrorString();
+setCommandLineOptions("--preOptModules+=unitChecking -d=dumpUnits"); getErrorString();
 translateModel(unitCheckTests.UnitCheck5); getErrorString();
 
 // Result:
@@ -32,10 +32,8 @@ translateModel(unitCheckTests.UnitCheck5); getErrorString();
 // HashTable:
 // {A,{1.0 * m^(1) * s^(-2)}}
 // {V,{1.0 * m^(1) * s^(-1)}}
-// {S,{1.0 * m^(1)}}
 // ######## UnitCheck COMPLETED ########
 // true
 // "Notification: "A" has the Unit "m.s-2"
-// "S" has the Unit "m"
 // "
 // endResult
