@@ -26,11 +26,7 @@ model ExtendsVisibility5
 end ExtendsVisibility5;
 
 // Result:
-// function ExtendsVisibility5.c.f
-//   output Real x = 1.0;
-// end ExtendsVisibility5.c.f;
-//
 // class ExtendsVisibility5
-//   Real x = ExtendsVisibility5.c.f();
+//   Real x = 1.0;
 // end ExtendsVisibility5;
 // endResult

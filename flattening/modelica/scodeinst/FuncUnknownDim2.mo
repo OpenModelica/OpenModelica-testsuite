@@ -16,18 +16,11 @@ model FuncUnknownDim2
 end FuncUnknownDim2; 
 
 // Result:
-// function f
-//   input Integer n;
-//   output Real[:] x;
-// algorithm
-//   x := /*Real[n]*/(fill(1, n));
-// end f;
-//
 // class FuncUnknownDim2
 //   Real x[1];
 //   Real x[2];
 //   Real x[3];
 // equation
-//   x = f(3);
+//   x = {1.0, 1.0, 1.0};
 // end FuncUnknownDim2;
 // endResult

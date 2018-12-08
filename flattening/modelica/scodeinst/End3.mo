@@ -17,6 +17,7 @@ model End3
   Real y = last(x);
 end End3;
 
+
 // Result:
 // function last
 //   input Real[:] x;
@@ -34,4 +35,3 @@ end End3;
 //   x = {1.0, 2.0, 3.0};
 // end End3;
 // endResult
-

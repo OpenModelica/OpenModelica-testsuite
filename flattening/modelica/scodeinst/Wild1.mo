@@ -16,14 +16,9 @@ algorithm
 end Wild1;
 
 // Result:
-// function f
-//   output Real x = 1.0;
-//   output Real y = 2.0;
-// end f;
-//
 // class Wild1
 //   Real x;
 // algorithm
-//   (_, x) := f();
+//   (_, x) := (1.0, 2.0);
 // end Wild1;
 // endResult

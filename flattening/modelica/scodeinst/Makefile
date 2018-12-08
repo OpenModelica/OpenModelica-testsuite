@@ -1,6 +1,8 @@
 TEST=../../../rtest -v
 
 TESTFILES=\
+ActualStream.mo \
+ActualStreamMinMax.mo \
 Algorithm1.mo \
 Algorithm2.mo \
 Algorithm3.mo \
@@ -55,6 +57,7 @@ CardinalityInvalidArg2.mo \
 ceval1.mo \
 ceval2.mo \
 ceval3.mo \
+ceval4.mo \
 ceval5.mo \
 CevalAbs1.mo \
 CevalAcos1.mo \
@@ -64,6 +67,8 @@ CevalArray1.mo \
 CevalArrayConstant1.mo \
 CevalArrayConstant2.mo \
 CevalArrayConstant3.mo \
+CevalArrayConstructor1.mo \
+CevalArrayConstructor2.mo \
 CevalAsin1.mo \
 CevalAtan1.mo \
 CevalAtan21.mo \
@@ -98,7 +103,6 @@ CevalFuncRecursive1.mo \
 CevalFuncRecursive2.mo \
 CevalFuncSubscript1.mo \
 CevalFuncSubscript2.mo \
-CevalFuncTerminate1.mo \
 CevalFuncWhile1.mo \
 CevalFuncWhile2.mo \
 CevalIdentity1.mo \
@@ -133,8 +137,6 @@ CevalRecordArray1.mo \
 CevalRecordArray2.mo \
 CevalRecordArray4.mo \
 CevalRecordArray5.mo \
-CevalReduction1.mo \
-CevalReduction2.mo \
 CevalRelation1.mo \
 CevalRem1.mo \
 CevalScalar1.mo \
@@ -175,6 +177,7 @@ ClassMod3.mo \
 ClassMod4.mo \
 ClassMod5.mo \
 ClassMod6.mo \
+ClockConstructor1.mo \
 Comment1.mo \
 CompAsFunc.mo \
 ComponentAsTypeError.mo \
@@ -190,7 +193,11 @@ Condition4.mo \
 Condition5.mo \
 Condition6.mo \
 ConditionInvalid1.mo \
+ConditionInvalidBinding1.mo \
+ConditionInvalidBinding2.mo \
 ConditionInvalidType1.mo \
+conn9.mo \
+conngraph1.mo \
 Connect1.mo \
 Connect2.mo \
 Connect4.mo \
@@ -262,10 +269,12 @@ dim18.mo \
 dim19.mo \
 dim7.mo \
 dim8.mo \
+DerivedRootClass1.mo \
 DuplicateElements1.mo \
 DuplicateElements2.mo \
 DuplicateElements3.mo \
 DuplicateElements4.mo \
+DuplicateElements5.mo \
 DuplicateElements9.mo \
 DuplicateElements10.mo \
 DuplicateElementsValid1.mo \
@@ -308,6 +317,7 @@ eq8.mo \
 eq10.mo \
 EqualityConstraint1.mo \
 EquationInvalidType1.mo \
+EvaluateAllParams.mo \
 Extends1.mo \
 Extends2.mo \
 Extends3.mo \
@@ -375,6 +385,7 @@ ForStatement2.mo \
 ForStatementArray.mo \
 ForStatementNonVector.mo \
 ForStatementPrefix.mo \
+func1.mo \
 func2.mo \
 FuncBuiltinAbs.mo \
 FuncBuiltinCeil.mo \
@@ -405,6 +416,7 @@ FuncBuiltinOnes.mo \
 FuncBuiltinOuterProduct.mo \
 FuncBuiltinPre.mo \
 FuncBuiltinProduct.mo \
+FuncBuiltinReduction.mo \
 FuncBuiltinRem.mo \
 FuncBuiltinSample.mo \
 FuncBuiltinScalar.mo \
@@ -430,6 +442,7 @@ FuncBuiltinVectorWrongType1.mo \
 FuncBuiltinZeros.mo \
 FuncClassParam.mo \
 FuncDefaultArg1.mo \
+FuncDefaultArg2.mo \
 FuncDuplicateParams1.mo \
 FuncExtends.mo \
 FuncInnerParam.mo \
@@ -455,9 +468,13 @@ FuncVectorization1.mo \
 FuncVectorization2.mo \
 FuncVectorization3.mo \
 FuncVectorizationBuiltin.mo \
+FuncVectorizationCastConflict1.mo \
 FuncVectorizationMap1.mo \
 FuncWildcard.mo \
 FuncWrongType.mo \
+FunctionalArg1.mo \
+FunctionalArg2.mo \
+FunctionalArgInvalidType1.mo \
 FunctionDerivative1.mo \
 FunctionDerivativeInvalidInput1.mo \
 FunctionDerivativeInvalidOrder1.mo \
@@ -469,6 +486,7 @@ FunctionMultiOutput2.mo \
 FunctionMultiOutput3.mo \
 FunctionMultiOutput4.mo \
 FunctionNoOutput1.mo \
+FunctionNonInputOutputParameter.mo \
 FunctionRecordArg1.mo \
 FunctionRecordArg2.mo \
 FunctionRecursive1.mo \
@@ -482,6 +500,10 @@ IfEquation2.mo \
 IfEquation3.mo \
 IfEquation4.mo \
 IfEquation5.mo \
+IfEquation6.mo \
+IfEquationEval1.mo \
+IfEquationEval2.mo \
+IfEquationEval3.mo \
 IfExpression1.mo \
 IfExpression2.mo \
 IfExpression3.mo \
@@ -569,6 +591,7 @@ ModClass2.mo \
 ModClass3.mo \
 ModClass4.mo \
 ModClass5.mo \
+ModClass6.mo \
 ModScope1.mo \
 MultiInheritanceRedeclare1.mo \
 MultiInheritanceRedeclare2.mo \
@@ -614,6 +637,9 @@ OperatorOverloadConstructorSimple.mo \
 OperatorOverloadError1.mo \
 PackageConstant1.mo \
 ParameterBug.mos \
+PartialApplication1.mo \
+PartialApplicationInvalidArg1.mo \
+PartialApplicationInvalidArg2.mo \
 Prefix1.mo \
 Prefix2.mo \
 Prefix3.mo \
@@ -628,6 +654,10 @@ RangeTypeError3.mo \
 RealRangeBinding1.mo \
 RecordBinding1.mo \
 RecordBinding2.mo \
+RecordBinding3.mo \
+RecordBinding4.mo \
+RecordExtends1.mo \
+RecordExtends2.mo \
 RecursiveExtends1.mo \
 RecursiveExtends3.mo \
 RedeclareClass1.mo \
@@ -690,6 +720,8 @@ Subscript1.mo \
 Subscript2.mo \
 Subscript3.mo \
 Subscript4.mo \
+Subscript5.mo \
+Subscript6.mo \
 SubscriptCevalIndex1.mo \
 SubscriptCevalIndexRange1.mo \
 SubscriptCevalSlice1.mo \
@@ -704,6 +736,8 @@ SubscriptWrongType1.mo \
 SubscriptWrongType2.mo \
 Terminate1.mo \
 TerminateInvalid1.mo \
+TerminateInvalid2.mo \
+TestSampleNoClock.mos \
 Time1.mo \
 Time2.mo \
 Time3.mo \
@@ -732,6 +766,7 @@ usertype3.mo \
 usertype4.mo \
 usertype5.mo \
 usertype6.mo \
+VectorTest.mo \
 Visibility1.mo \
 Visibility2.mo \
 Visibility3.mo \
@@ -747,36 +782,32 @@ WhenIllegalContext4.mo \
 WhenInitial1.mo \
 WhenNested1.mo \
 WhenNested2.mo \
+WhenVariability1.mo \
+WhenVariability2.mo \
 Wild1.mo \
+OCGTests.mos \
 
 # test that currently fail. Move up when fixed.
 # Run make testfailing
 FAILINGTESTFILES=\
 CevalRecordArray3.mo \
-ModClass6.mo \
 IfExpression6.mo \
 RedeclareConstant1.mo \
-ActualStream.mo \
-ActualStreamMinMax.mo \
 InStreamInvalidArgument1.mo \
 InStreamInvalidArgument2.mo \
 Connect3.mo \
 ProtectedMod1.mo \
 dim2.mo \
-DuplicateElements5.mo \
 DuplicateElements6.mo \
 DuplicateElements7.mo \
 DuplicateElements8.mo \
 DuplicateElementsValid2.mo \
 DuplicateElementsCond1.mo \
-ceval4.mo \
 cond3.mo \
 conn12.mo \
 conn13.mo \
 conn14.mo \
 conn8.mo \
-conn9.mo \
-conngraph1.mo \
 conngraph2.mo \
 enum6.mo \
 expconn1.mo \
@@ -786,9 +817,7 @@ expconn4.mo \
 expconn5.mo \
 expconn6.mo \
 expconn7.mo \
-func1.mo \
 FuncBuiltinEnumTypeName.mo \
-FuncBuiltinReduction.mo \
 ImportShadowing1.mo \
 InnerOuterExtends1.mo \
 inst1.mo \
@@ -821,6 +850,8 @@ redeclare8.mo \
 type4.mo \
 type5.mo \
 PackageConstant2.mo \
+sts.mos \
+
 
 # Dependency files that are not .mo .mos or Makefile
 # Add them here or they will be cleaned.

@@ -20,18 +20,7 @@ model FunctionRecursive1
 end FunctionRecursive1;
 
 // Result:
-// function fac
-//   input Integer n;
-//   output Integer o;
-// algorithm
-//   if n <= 1 then
-//     o := 1;
-//   else
-//     o := n * fac(n - 1);
-//   end if;
-// end fac;
-//
 // class FunctionRecursive1
-//   Integer x = fac(5);
+//   Integer x = 120;
 // end FunctionRecursive1;
 // endResult

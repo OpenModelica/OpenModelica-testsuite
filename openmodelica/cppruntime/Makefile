@@ -18,7 +18,11 @@ functionPointerTest.mos \
 recordTupleReturnTest.mos \
 RefArrayDim2.mos \
 solveTest.mos \
+testArrayEquations.mos \
 testMatrixIO.mos \
+testVectorizedBlocks.mos \
+testVectorizedPowerSystem.mos \
+testVectorizedSolarSystem.mos \
 trapezoidTest.mos
 
 FAILINGTESTFILES= \

@@ -1,6 +1,5 @@
 TEST = ../../../../rtest -v
 
-
 TESTFILES = \
 runDrumBoiler.mos \
 runExReduceDrumBoiler.mos \

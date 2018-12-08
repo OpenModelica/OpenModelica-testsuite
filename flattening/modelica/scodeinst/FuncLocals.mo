@@ -20,15 +20,7 @@ model FuncLocals
 end FuncLocals;
 
 // Result:
-// function f
-//   input Real x;
-//   output Real y;
-//   protected parameter Real z = 2.0;
-// algorithm
-//   y := x * z;
-// end f;
-//
 // class FuncLocals
-//   Real x = f(4.0);
+//   Real x = 8.0;
 // end FuncLocals;
 // endResult
