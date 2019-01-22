@@ -1,0 +1,55 @@
+// name: testTicket5226
+// keywords: initialization, if equations
+// status: correct
+// cflags:
+// teardown_command: rm -rf  output.log
+//
+
+loadString("
+within ;
+model ticket5226
+  Real x;
+  Real y;
+  Real usat;
+  Real u;
+  parameter Real y0(fixed = false, start = 8);
+  parameter Real T = 1;
+  parameter Real k = 10;
+  parameter Real uMin = 0;
+  parameter Real uMax = 1;
+parameter Real y_ref = 8;
+initial equation
+  der(x) = 0;
+  if u > usat then
+    u = usat + 1;
+  else
+    y = y_ref;
+  end if;
+equation
+  T * der(x) = usat - x;
+  y = k * x;
+  usat = homotopy(actual = smooth(0, if u > uMax then uMax else if u < uMin then uMin else u), simplified = u);
+  u = y0 - y;
+end ticket5226;
+"); getErrorString();
+
+simulate(ticket5226); getErrorString();
+
+val(y, 0.0);
+
+// Result:
+// true
+// ""
+// true
+// ""
+// record SimulationResult
+//     resultFile = "initializationTests.discreteTest10_res.mat",
+//     simulationOptions = "startTime = 0.0, stopTime = 1.0, numberOfIntervals = 0, tolerance = 1e-06, method = 'dassl', fileNamePrefix = 'initializationTests.discreteTest10', options = '', outputFormat = 'mat', variableFilter = '.*', cflags = '', simflags = ''",
+//     messages = "LOG_SUCCESS       | info    | The initialization finished successfully without homotopy method.
+// LOG_SUCCESS       | info    | The simulation finished successfully.
+// "
+// end SimulationResult;
+// ""
+// {{2.0,2.0,0.5,0.5,0.5},{4.0,4.0,0.25,0.25,0.25}}
+// ""
+// endResult
